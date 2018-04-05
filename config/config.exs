@@ -28,3 +28,8 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :mpesa_elixir,
+  api_url: "https://sandbox.safaricom.co.ke",
+  consumer_key: "hlsAXwa0ZIUrjLdXEwQ4nb3DOftIWdei",
+  consumer_secret: "1yjf0pbqE0lfcDy4"
