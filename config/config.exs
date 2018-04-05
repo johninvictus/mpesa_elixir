@@ -32,4 +32,8 @@ use Mix.Config
 config :mpesa_elixir,
   api_url: "https://sandbox.safaricom.co.ke",
   consumer_key: "hlsAXwa0ZIUrjLdXEwQ4nb3DOftIWdei",
-  consumer_secret: "1yjf0pbqE0lfcDy4"
+  consumer_secret: "1yjf0pbqE0lfcDy4",
+  confirmation_url: "",
+  validation_url: "",
+  short_code: "603017",
+  response_type: "Cancelled"

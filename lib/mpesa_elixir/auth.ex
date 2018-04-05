@@ -62,9 +62,13 @@ defmodule MpesaElixir.Auth do
   """
   @spec generate_token() :: response
   def generate_token do
-    Auth.get("/oauth/v1/generate?grant_type=client_credentials") |> process_response()
+    Auth.get("/oauth/v1/generate?grant_type=client_credentials")
+    |> process_response()
   end
 
+  @doc """
+  Process the response from the API
+  """
   def process_response(%HTTPotion.Response{status_code: status_code, body: body} = resp) do
     cond do
       status_code == 200 ->

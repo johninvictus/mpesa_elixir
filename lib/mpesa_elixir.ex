@@ -9,7 +9,7 @@ defmodule MpesaElixir do
   Create a complete url to work with
   """
   def process_url(url) do
-    get_api_url() <> url
+    get_api_url() <> "/mpesa" <> url
   end
 
   @doc """
