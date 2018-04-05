@@ -1,6 +1,8 @@
 defmodule MpesaElixir do
   use HTTPotion.Base
 
+  alias MpesaElixir.Auth
+
   @user_agent "mpesa_elixir"
 
   @doc """
@@ -21,7 +23,22 @@ defmodule MpesaElixir do
   Attach a user agent parameter for all the requests
   """
   def process_request_headers(headers) do
-    Keyword.put(headers, :"User-Agent", @user_agent)
+    headers =
+      Keyword.put(headers, :"User-Agent", @user_agent)
+      |> Keyword.put(:"Content-Type", "application/json")
+
+    case Auth.generate_token() do
+      {:ok, %Auth{access_token: token}, _} ->
+        Keyword.put(headers, :Authorization, "Bearer #{token}")
+
+      {:error, %HTTPotion.Response{body: body}} ->
+        IO.inspect("Error occured #{body}")
+        headers
+
+      {:local_error, reason} ->
+        IO.puts("Error :: #{reason}")
+        headers
+    end
   end
 
   @doc """
