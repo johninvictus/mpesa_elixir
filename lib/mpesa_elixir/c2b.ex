@@ -42,4 +42,20 @@ defmodule MpesaElixir.C2b do
 
     MpesaElixir.post("/c2b/v1/registerurl", body: Poison.encode!(body))
   end
+
+  @doc """
+   Msisdn - should have no + before the number country code
+   amount - should have cent. ie 200.00
+  """
+  def simulate(msisdn, amount, unique_reference) do
+    body = %{
+      "ShortCode" => get_short_code(),
+      "CommandID" => "CustomerPayBillOnline",
+      "Amount" => amount,
+      "Msisdn" => msisdn,
+      "BillRefNumber" => unique_reference
+    }
+
+    MpesaElixir.post("/c2b/v1/simulate", body: Poison.encode!(body))
+  end
 end
