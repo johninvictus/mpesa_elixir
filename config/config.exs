@@ -37,4 +37,7 @@ config :mpesa_elixir,
   validation_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/validation",
   short_code: "603017",
   response_type: "Cancelled",
-  certificate_path: "./lib/mpesa_elixir/keys/sandbox_cert.cer"
+  certificate_path: "./lib/mpesa_elixir/keys/sandbox_cert.cer",
+  initiator_name: "apiop39",
+  b2c_queue_time_out_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/validation",
+  b2c_result_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/validation"

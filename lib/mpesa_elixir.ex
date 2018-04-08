@@ -20,6 +20,13 @@ defmodule MpesaElixir do
   end
 
   @doc """
+  get  short code from config
+  """
+  def get_short_code do
+    Application.get_env(:mpesa_elixir, :short_code)
+  end
+
+  @doc """
   Attach a user agent parameter for all the requests
   """
   def process_request_headers(headers) do

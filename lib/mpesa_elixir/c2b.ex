@@ -19,13 +19,6 @@ defmodule MpesaElixir.C2b do
   end
 
   @doc """
-  get all short codes
-  """
-  def get_short_code do
-    Application.get_env(:mpesa_elixir, :short_code)
-  end
-
-  @doc """
   get the response type from the config
   """
   def get_response_type do
@@ -37,7 +30,7 @@ defmodule MpesaElixir.C2b do
       "ResponseType" => get_response_type(),
       "ConfirmationURL" => get_confirmation_url(),
       "ValidationURL" => get_validation_url(),
-      "ShortCode" => get_short_code()
+      "ShortCode" => MpesaElixir.get_short_code()
     }
 
     MpesaElixir.post("/c2b/v1/registerurl", body: Poison.encode!(body))
@@ -49,7 +42,7 @@ defmodule MpesaElixir.C2b do
   """
   def simulate(msisdn, amount, unique_reference) do
     body = %{
-      "ShortCode" => get_short_code(),
+      "ShortCode" => MpesaElixir.get_short_code(),
       "CommandID" => "CustomerPayBillOnline",
       "Amount" => amount,
       "Msisdn" => msisdn,
