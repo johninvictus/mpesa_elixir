@@ -27,6 +27,14 @@ defmodule MpesaElixir do
   end
 
   @doc """
+  Get the initiator name from the config file
+  """
+  @spec get_initiator_name() :: String.t()
+  def get_initiator_name do
+    Application.get_env(:mpesa_elixir, :initiator_name)
+  end
+
+  @doc """
   Attach a user agent parameter for all the requests
   """
   def process_request_headers(headers) do

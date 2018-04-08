@@ -5,14 +5,6 @@ defmodule MpesaElixir.B2c do
   alias MpesaElixir
   alias MpesaElixir.Auth
 
-  @doc """
-  Get the initiator name from the config file
-  """
-  @spec get_initiator_name() :: String.t()
-  def get_initiator_name do
-    Application.get_env(:mpesa_elixir, :initiator_name)
-  end
-
   @spec get_b2c_queue_time_out_url() :: String.t()
   def get_b2c_queue_time_out_url do
     Application.get_env(:mpesa_elixir, :b2c_queue_time_out_url)
@@ -25,10 +17,13 @@ defmodule MpesaElixir.B2c do
 
   @doc """
     Command_id: use "SalaryPayment", "BusinessPayment", "PromotionPayment"
+    amount: eg 200
+    partyb: your number eg 254718101442
+
   """
   def payment_request(command_id, amount, partyb, remarks, occasion \\ nil) do
     body = %{
-      "InitiatorName" => get_initiator_name(),
+      "InitiatorName" => MpesaElixir.get_initiator_name(),
       "SecurityCredential" => Auth.security(),
       "CommandID" => command_id,
       "Amount" => amount,
