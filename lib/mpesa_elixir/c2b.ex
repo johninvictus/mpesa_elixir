@@ -57,5 +57,6 @@ defmodule MpesaElixir.C2b do
     }
 
     MpesaElixir.post("/c2b/v1/simulate", body: Poison.encode!(body))
+    |> MpesaElixir.process_response()
   end
 end

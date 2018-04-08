@@ -48,4 +48,21 @@ defmodule MpesaElixir do
   def process_response_body(body) do
     body |> Poison.decode!()
   end
+
+  @doc """
+  Process the response from the API
+  """
+  def process_response(%HTTPotion.Response{status_code: status_code, body: body} = resp) do
+    cond do
+      status_code == 200 ->
+        {:ok, body, resp}
+
+      true ->
+        {:error, resp}
+    end
+  end
+
+  def process_response(%HTTPotion.ErrorResponse{message: message}) do
+    {:local_error, message}
+  end
 end

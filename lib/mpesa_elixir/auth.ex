@@ -82,4 +82,22 @@ defmodule MpesaElixir.Auth do
   def process_response(%HTTPotion.ErrorResponse{message: message}) do
     {:local_error, message}
   end
+
+  @spec security :: any()
+  def security do
+    cert_text = File.read!("./lib/mpesa_elixir/keys/sandbox_cert.cer") |> String.trim()
+    [pem_entry] = :public_key.pem_decode(cert_text)
+    plk = :public_key.pem_entry_decode(pem_entry)
+    list = Tuple.to_list(elem(plk, 1))
+    der_value = List.keyfind(list, :SubjectPublicKeyInfo, 0) |> elem(2)
+
+    plain_text = "Safaricom133!"
+
+    public_key = :public_key.der_decode(:RSAPublicKey, der_value)
+
+    ciphertext =
+      :public_key.encrypt_public(plain_text, public_key, [{:rsa_pad, :rsa_pkcs1_padding}])
+
+    :base64.encode(ciphertext)
+  end
 end

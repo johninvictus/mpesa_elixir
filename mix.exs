@@ -22,7 +22,9 @@ defmodule MpesaElixir.MixProject do
   defp deps do
     [
       {:httpotion, "~> 3.1.0"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      {:rsa, "~> 0.0.1 "},
+      {:ex_crypto, "~> 0.9.0"}
     ]
   end
 end
