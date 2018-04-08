@@ -1,5 +1,6 @@
 defmodule MpesaElixir.Auth do
   alias MpesaElixir.Auth
+  alias MpesaElixir.PublicKey
 
   use HTTPotion.Base
 
@@ -19,6 +20,13 @@ defmodule MpesaElixir.Auth do
   """
   def get_consumer_key do
     Application.get_env(:mpesa_elixir, :consumer_key) || ""
+  end
+
+  @doc """
+   get the certificate path from your config file
+  """
+  def get_certificate_path do
+    Application.get_env(:mpesa_elixir, :certificate_path)
   end
 
   @doc """
@@ -69,6 +77,7 @@ defmodule MpesaElixir.Auth do
   @doc """
   Process the response from the API
   """
+  @spec process_response(HTTPotion.Response.t()) :: {:ok, %Auth{}, HTTPotion.Response.t()} | {:error, HTTPotion.Response.t()}
   def process_response(%HTTPotion.Response{status_code: status_code, body: body} = resp) do
     cond do
       status_code == 200 ->
@@ -79,25 +88,20 @@ defmodule MpesaElixir.Auth do
     end
   end
 
+  @spec process_response(HTTPotion.ErrorResponse.t()) :: {:local_error, String.t()}
   def process_response(%HTTPotion.ErrorResponse{message: message}) do
     {:local_error, message}
   end
 
-  @spec security :: any()
+@doc """
+This function will generate a securty key to use with SecurityCredential
+"""
+  @spec security :: String.t()
   def security do
-    cert_text = File.read!("./lib/mpesa_elixir/keys/sandbox_cert.cer") |> String.trim()
-    [pem_entry] = :public_key.pem_decode(cert_text)
-    plk = :public_key.pem_entry_decode(pem_entry)
-    list = Tuple.to_list(elem(plk, 1))
-    der_value = List.keyfind(list, :SubjectPublicKeyInfo, 0) |> elem(2)
-
     plain_text = "Safaricom133!"
 
-    public_key = :public_key.der_decode(:RSAPublicKey, der_value)
-
-    ciphertext =
-      :public_key.encrypt_public(plain_text, public_key, [{:rsa_pad, :rsa_pkcs1_padding}])
-
-    :base64.encode(ciphertext)
+    get_certificate_path()
+    |> PublicKey.extract_public_from()
+    |> PublicKey.generate_base64_cypherstring(plain_text)
   end
 end

@@ -1,0 +1,11 @@
+{application,mpesa_elixir,
+             [{applications,[kernel,stdlib,elixir,logger,httpotion,rsa,poison,
+                             ex_crypto]},
+              {description,"mpesa_elixir"},
+              {modules,['Elixir.MpesaElixir','Elixir.MpesaElixir.Auth',
+                        'Elixir.MpesaElixir.B2c','Elixir.MpesaElixir.C2b',
+                        'Elixir.MpesaElixir.PublicKey',
+                        'Elixir.MpesaElixir.PublicKey.Record']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger,httpotion]}]}.

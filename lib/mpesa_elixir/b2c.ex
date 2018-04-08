@@ -3,4 +3,5 @@ defmodule MpesaElixir.B2c do
   This modeule will contain all transactions
   """
   alias MpesaElixir
+
 end

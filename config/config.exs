@@ -36,4 +36,5 @@ config :mpesa_elixir,
   confirmation_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/confirmation",
   validation_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/validation",
   short_code: "603017",
-  response_type: "Cancelled"
+  response_type: "Cancelled",
+  certificate_path: "./lib/mpesa_elixir/keys/sandbox_cert.cer"

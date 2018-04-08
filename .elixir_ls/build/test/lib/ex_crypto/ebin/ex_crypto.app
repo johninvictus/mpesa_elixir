@@ -1,0 +1,13 @@
+{application,ex_crypto,
+             [{description,"A wrapper around the Erlang Crypto module with sensible defaults for common tasks.\n"},
+              {modules,['Elixir.ExCrypto','Elixir.ExCrypto.Error',
+                        'Elixir.ExCrypto.HMAC','Elixir.ExCrypto.Hash',
+                        'Elixir.ExCrypto.Token','Elixir.ExEntropy',
+                        'Elixir.ExPublicKey',
+                        'Elixir.ExPublicKey.RSAPrivateKey',
+                        'Elixir.ExPublicKey.RSAPublicKey',
+                        'Elixir.Inspect.ExPublicKey.RSAPrivateKey',
+                        'Elixir.Inspect.ExPublicKey.RSAPublicKey']},
+              {registered,[]},
+              {vsn,"0.9.0"},
+              {applications,[kernel,stdlib,elixir,logger,crypto,public_key]}]}.
