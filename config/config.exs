@@ -46,4 +46,6 @@ config :mpesa_elixir,
   balance_queue_time_out_url: "",
   balance_result_url: "",
   status_queue_time_out_url: "",
-  status_result_url: ""
+  status_result_url: "",
+  reversal_queue_time_out_url: "",
+  reversal_result_url: ""
