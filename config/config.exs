@@ -44,4 +44,6 @@ config :mpesa_elixir,
   b2b_queue_time_out_url: "",
   b2b_result_url: "",
   balance_queue_time_out_url: "",
-  balance_result_url: ""
+  balance_result_url: "",
+  status_queue_time_out_url: "",
+  status_result_url: ""
