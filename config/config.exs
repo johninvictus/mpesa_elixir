@@ -48,4 +48,5 @@ config :mpesa_elixir,
   status_queue_time_out_url: "",
   status_result_url: "",
   reversal_queue_time_out_url: "",
-  reversal_result_url: ""
+  reversal_result_url: "",
+  stk_call_back_url: ""

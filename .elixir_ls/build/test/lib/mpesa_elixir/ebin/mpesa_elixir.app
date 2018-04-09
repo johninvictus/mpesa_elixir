@@ -7,6 +7,7 @@
                         'Elixir.MpesaElixir.B2c','Elixir.MpesaElixir.C2b',
                         'Elixir.MpesaElixir.PublicKey',
                         'Elixir.MpesaElixir.PublicKey.Record',
+                        'Elixir.MpesaElixir.StkPush',
                         'Elixir.MpesaElixir.Transaction']},
               {registered,[]},
               {vsn,"0.1.0"},
