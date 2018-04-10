@@ -1,6 +1,6 @@
 {application,mpesa_elixir,
-             [{applications,[kernel,stdlib,elixir,logger,httpotion,rsa,poison,
-                             ex_crypto]},
+             [{applications,[kernel,stdlib,elixir,logger,httpotion,timex,rsa,
+                             poison,ex_crypto]},
               {description,"mpesa_elixir"},
               {modules,['Elixir.Account','Elixir.MpesaElixir',
                         'Elixir.MpesaElixir.Auth','Elixir.MpesaElixir.B2b',
@@ -11,4 +11,4 @@
                         'Elixir.MpesaElixir.Transaction']},
               {registered,[]},
               {vsn,"0.1.0"},
-              {extra_applications,[logger,httpotion]}]}.
+              {extra_applications,[logger,httpotion,timex]}]}.

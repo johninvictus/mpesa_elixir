@@ -27,6 +27,13 @@ defmodule MpesaElixir do
   end
 
   @doc """
+    get business code to work with b2b
+  """
+  def get_b2c_short_code do
+    Application.get_env(:mpesa_elixir, :b2c_short_code)
+  end
+
+  @doc """
   Get the initiator name from the config file
   """
   @spec get_initiator_name() :: String.t()

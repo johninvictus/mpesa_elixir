@@ -27,7 +27,7 @@ defmodule MpesaElixir.B2c do
       "SecurityCredential" => Auth.security(),
       "CommandID" => command_id,
       "Amount" => amount,
-      "PartyA" => MpesaElixir.get_short_code(),
+      "PartyA" => MpesaElixir.get_b2c_short_code(),
       "PartyB" => partyb,
       "Remarks" => remarks,
       "QueueTimeOutURL" => get_b2c_queue_time_out_url(),

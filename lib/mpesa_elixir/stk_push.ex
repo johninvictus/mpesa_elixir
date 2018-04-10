@@ -5,19 +5,23 @@ defmodule MpesaElixir.StkPush do
     Application.get_env(:mpesa_elixir, :stk_call_back_url)
   end
 
+  def get_pass_key do
+    Application.get_env(:mpesa_elixir, :pass_key)
+  end
+
   def processrequest(
         phone_number,
-        business_short_code,
-        short_code,
         pass_key,
-        timestamp,
         amount,
         account_reference,
         transaction_desc
       ) do
+    timestamp = get_timestamp()
+    business_short_code = MpesaElixir.get_short_code()
+
     body = %{
       "BusinessShortCode" => business_short_code,
-      "Password" => :base64.encode("#{short_code}#{pass_key}#{timestamp}"),
+      "Password" => :base64.encode("#{business_short_code}#{pass_key}#{timestamp}"),
       "Timestamp" => timestamp,
       "TransactionType" => "CustomerPayBillOnline",
       "Amount" => amount,
@@ -33,15 +37,24 @@ defmodule MpesaElixir.StkPush do
     |> MpesaElixir.process_response()
   end
 
-  def query(short_code, timestamp, pass_key, checkout_requestId) do
+  def query(checkout_requestId) do
+    pass_key = get_pass_key()
+    timestamp = get_timestamp()
+    business_short_code = MpesaElixir.get_short_code()
+
     body = %{
-      "BusinessShortCode" => short_code,
-      "Password" => :base64.encode("#{short_code}#{pass_key}#{timestamp}"),
+      "BusinessShortCode" => business_short_code,
+      "Password" => :base64.encode("#{business_short_code}#{pass_key}#{timestamp}"),
       "Timestamp" => timestamp,
       "CheckoutRequestID" => checkout_requestId
     }
 
     MpesaElixir.post("/stkpushquery/v1/query", body: Poison.encode!(body))
     |> MpesaElixir.process_response()
+  end
+
+  def get_timestamp do
+    Timex.local()
+    |> Timex.format!("{YYYY}{0M}{0D}{h24}{m}{s}")
   end
 end
