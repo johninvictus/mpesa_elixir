@@ -32,14 +32,15 @@ defmodule MpesaElixir.MixProject do
       {:poison, "~> 3.1"},
       {:rsa, "~> 0.0.1 "},
       {:ex_crypto, "~> 0.9.0"},
-      {:timex, "~> 3.1"}
+      {:timex, "~> 3.1"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
   defp package do
     [
       maintainers: ["John Invictus"],
-      licenses: ["MIT"],
+      licenses: ["Apache 2.0"],
       links: %{"Github" => "https://github.com/johninvictus/mpesa_elixir"}
     ]
   end
