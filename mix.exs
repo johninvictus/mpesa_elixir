@@ -1,13 +1,20 @@
 defmodule MpesaElixir.MixProject do
   use Mix.Project
 
+  @description """
+    Elixir wrapper for Safricom Mpesa API
+  """
+
   def project do
     [
       app: :mpesa_elixir,
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      description: @description,
+      package: package(),
+      deps: deps(),
+      name: "MpesaElixir"
     ]
   end
 
@@ -26,6 +33,14 @@ defmodule MpesaElixir.MixProject do
       {:rsa, "~> 0.0.1 "},
       {:ex_crypto, "~> 0.9.0"},
       {:timex, "~> 3.1"}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["John Invictus"],
+      licenses: ["MIT"],
+      links: %{"Github" => "https://github.com/johninvictus/mpesa_elixir"}
     ]
   end
 end

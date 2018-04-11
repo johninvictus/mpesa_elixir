@@ -1,7 +1,7 @@
 {application,mpesa_elixir,
              [{applications,[kernel,stdlib,elixir,logger,httpotion,timex,rsa,
                              poison,ex_crypto]},
-              {description,"mpesa_elixir"},
+              {description,"  Elixir wrapper for Safricom Mpesa API\n"},
               {modules,['Elixir.Account','Elixir.MpesaElixir',
                         'Elixir.MpesaElixir.Auth','Elixir.MpesaElixir.B2b',
                         'Elixir.MpesaElixir.B2c','Elixir.MpesaElixir.C2b',
