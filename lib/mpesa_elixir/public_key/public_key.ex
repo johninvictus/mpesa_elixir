@@ -43,7 +43,7 @@ defmodule MpesaElixir.PublicKey do
   ```
   """
   @spec generate_base64_cypherstring(term(), String.t()) :: String.t()
-  def generate_base64_cypherstring({:RSAPublicKey, _} = public_key, plain_text) do
+  def generate_base64_cypherstring(public_key, plain_text) do
     plain_text
     |> :public_key.encrypt_public(public_key, [{:rsa_pad, :rsa_pkcs1_padding}])
     |> :base64.encode()
