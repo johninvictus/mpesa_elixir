@@ -10,5 +10,5 @@
                         'Elixir.MpesaElixir.StkPush',
                         'Elixir.MpesaElixir.Transaction']},
               {registered,[]},
-              {vsn,"0.1.0"},
+              {vsn,"0.1.1"},
               {extra_applications,[logger,httpotion,timex]}]}.
