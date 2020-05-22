@@ -8,8 +8,8 @@ defmodule MpesaElixir.MixProject do
   def project do
     [
       app: :mpesa_elixir,
-      version: "0.1.1",
-      elixir: "~> 1.6",
+      version: "0.2.1",
+      elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       description: @description,
       package: package(),
@@ -28,20 +28,21 @@ defmodule MpesaElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpotion, "~> 3.1.0"},
-      {:poison, "~> 3.1"},
-      {:rsa, "~> 0.0.1 "},
-      {:ex_crypto, "~> 0.9.0"},
-      {:timex, "~> 3.1"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:httpotion, "~> 3.1.3"},
+      {:poison, "~> 4.0.1"},
+      {:rsa, "~> 1.0.0 "},
+      {:ex_crypto, "~> 0.10.0"},
+      {:timex, "~> 3.6.2"},
+      {:ex_doc, ">= 0.22.1", only: :dev}
     ]
   end
 
   defp package do
     [
-      maintainers: ["John Invictus"],
+      maintainers: ["erik-mocny"],
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/johninvictus/mpesa_elixir"}
+      organization: "payout",
+      links: %{"Github" => "https://github.com/payout-one/mpesa_elixir"}
     ]
   end
 end
