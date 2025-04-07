@@ -1,5 +1,4 @@
 defmodule MpesaElixir.Transaction do
-
   alias MpesaElixir.Auth
 
   def get_status_queue_time_out_url do
@@ -17,7 +16,6 @@ defmodule MpesaElixir.Transaction do
   def get_reversal_result_url do
     Application.get_env(:mpesa_elixir, :reversal_result_url)
   end
-
 
   def status(transaction_id, identifier_type, remarks, occasion \\ nil) do
     body = %{
@@ -37,7 +35,14 @@ defmodule MpesaElixir.Transaction do
     |> MpesaElixir.process_response()
   end
 
-  def reverse(transaction_id, amount, receiver_party, reciever_identifier_type, remarks, occasion \\ nil) do
+  def reverse(
+        transaction_id,
+        amount,
+        receiver_party,
+        reciever_identifier_type,
+        remarks,
+        occasion \\ nil
+      ) do
     body = %{
       "Initiator" => MpesaElixir.get_initiator_name(),
       "SecurityCredential" => Auth.security(),

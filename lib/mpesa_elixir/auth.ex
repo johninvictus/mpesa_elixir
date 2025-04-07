@@ -77,7 +77,8 @@ defmodule MpesaElixir.Auth do
   @doc """
   Process the response from the API
   """
-  @spec process_response(HTTPotion.Response.t()) :: {:ok, %Auth{}, HTTPotion.Response.t()} | {:error, HTTPotion.Response.t()}
+  @spec process_response(HTTPotion.Response.t()) ::
+          {:ok, %Auth{}, HTTPotion.Response.t()} | {:error, HTTPotion.Response.t()}
   def process_response(%HTTPotion.Response{status_code: status_code, body: body} = resp) do
     cond do
       status_code == 200 ->
@@ -93,9 +94,9 @@ defmodule MpesaElixir.Auth do
     {:local_error, message}
   end
 
-@doc """
-This function will generate a securty key to use with SecurityCredential
-"""
+  @doc """
+  This function will generate a securty key to use with SecurityCredential
+  """
   @spec security :: String.t()
   def security do
     plain_text = "Safaricom133!"
