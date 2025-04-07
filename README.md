@@ -1,5 +1,7 @@
 # MpesaElixir
 
+## RUN WORKFLOW LOCALLY
+> gh workflow run ci.yml
 
 ## Installation
 
