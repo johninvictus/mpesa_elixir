@@ -28,12 +28,13 @@ defmodule MpesaElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpotion, "~> 3.1.0"},
-      {:poison, "~> 3.1"},
+      {:httpotion, "~> 3.1.0"}, # will be removed, will use Req
+      {:poison, "~> 3.1"}, # will be removed, will use Jason
       {:rsa, "~> 0.0.1 "},
       {:ex_crypto, "~> 0.9.0"},
-      {:timex, "~> 3.1"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:timex, "~> 3.1"}, # will be removed after full update
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:req, "~> 0.5.0"}
     ]
   end
 
