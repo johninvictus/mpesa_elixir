@@ -3337,3 +3337,7 @@
 14:00:11.179 [debug] handled notification client -> server $/cancelRequest in 195µs
 
 14:00:11.180 id=1962 [debug] handled request client -> server textDocument/codeAction in 591µs
+
+16:10:10.508 [debug] handled notification client -> server textDocument/didChange in 396µs
+
+16:10:10.514 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 490µs
