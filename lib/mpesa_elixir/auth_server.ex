@@ -33,7 +33,7 @@ defmodule MpesaElixir.AuthServer do
   The server requires the following configuration parameters:
 
   ```elixir
-  config :mpesa_ex,
+  config :mpesa_elixir,
     consumer_key: "your_consumer_key",
     consumer_secret: "your_consumer_secret"
   ```
@@ -78,7 +78,7 @@ defmodule MpesaElixir.AuthServer do
       API.request("/oauth/v1/generate?grant_type=client_credentials",
         auth:
           {:basic,
-           "#{Application.get_env(:mpesa_ex, :consumer_key, "")}:#{Application.get_env(:mpesa_ex, :consumer_secret, "")}"}
+           "#{Application.get_env(:mpesa_elixir, :consumer_key, "")}:#{Application.get_env(:mpesa_elixir, :consumer_secret, "")}"}
       )
 
     case result do

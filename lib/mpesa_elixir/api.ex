@@ -50,10 +50,10 @@ defmodule MpesaElixir.API do
 
   ```elixir
   # For sandbox environment
-  config :mpesa_ex, sandbox: true
+  config :mpesa_elixir, sandbox: true
 
   # For production environment
-  config :mpesa_ex, sandbox: false
+  config :mpesa_elixir, sandbox: false
   ```
   """
   alias MpesaElixir.AuthServer
@@ -89,7 +89,7 @@ defmodule MpesaElixir.API do
   end
 
   defp base_url do
-    if Application.get_env(:mpesa_ex, :sandbox, false) do
+    if Application.get_env(:mpesa_elixir, :sandbox, false) do
       "https://sandbox.safaricom.co.ke"
     else
       "https://api.safaricom.co.ke"
