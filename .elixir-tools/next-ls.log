@@ -37838,3 +37838,205 @@ PATH=/opt/homebrew/bin:/Users/invictus/Library/Application Support/.burrito/next
 15:37:26.645 id=2867 [debug] handled request client -> server textDocument/definition in 788µs
 
 15:37:26.803 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 179µs
+
+15:38:26.241 id=3138 [debug] sent request server -> client window/workDoneProgress/create
+
+15:38:26.242 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+15:38:26.242 [debug] sent notification server -> client $/progress
+
+15:38:26.311 [debug] sent notification server -> client $/progress
+
+15:38:26.311 [debug] sent notification server -> client window/logMessage
+
+15:38:26.311 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.311 [info] Compiled mpesa_elixir!
+
+15:38:26.311 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.311 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.311 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.311 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.312 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.335 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:26.566 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 170µs
+
+15:38:27.907 id=2868 [debug] handled request client -> server textDocument/codeAction in 157µs
+
+15:38:28.156 id=2869 [debug] handled request client -> server textDocument/codeAction in 129µs
+
+15:38:28.210 id=2870 [debug] handled request client -> server textDocument/documentSymbol in 4ms
+
+15:38:34.022 id=2871 [debug] handled request client -> server textDocument/codeAction in 299µs
+
+15:38:35.535 [debug] handled notification client -> server textDocument/didChange in 155µs
+
+15:38:35.639 id=2872 [debug] handled request client -> server textDocument/documentSymbol in 173µs
+
+15:38:35.640 id=2873 [debug] handled request client -> server textDocument/documentSymbol in 87µs
+
+15:38:35.864 id=3170 [debug] sent request server -> client window/workDoneProgress/create
+
+15:38:35.864 [debug] handled notification client -> server textDocument/didSave in 790µs
+
+15:38:35.865 [debug] sent notification server -> client $/progress
+
+15:38:35.915 [debug] sent notification server -> client $/progress
+
+15:38:35.915 [debug] sent notification server -> client window/logMessage
+
+15:38:35.915 [info] Compiled mpesa_elixir!
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.915 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.937 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.937 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.938 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.938 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.938 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.938 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:35.938 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:36.195 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 213µs
+
+15:38:48.756 id=2874 [debug] handled request client -> server textDocument/documentSymbol in 111µs
+
+15:38:49.670 [debug] handled notification client -> server textDocument/didChange in 318µs
+
+15:38:49.671 id=2875 [debug] handled request client -> server textDocument/codeAction in 235µs
+
+15:38:49.673 id=2876 [debug] handled request client -> server textDocument/documentSymbol in 228µs
+
+15:38:49.766 id=2877 [debug] handled request client -> server textDocument/documentSymbol in 248µs
+
+15:38:49.851 id=3202 [debug] sent request server -> client window/workDoneProgress/create
+
+15:38:49.851 [debug] handled notification client -> server textDocument/didSave in 754µs
+
+15:38:49.852 [debug] sent notification server -> client $/progress
+
+15:38:49.898 [debug] sent notification server -> client $/progress
+
+15:38:49.898 [debug] sent notification server -> client window/logMessage
+
+15:38:49.898 [info] Compiled mpesa_elixir!
+
+15:38:49.898 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.899 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:49.922 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+15:38:50.187 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 431µs
+
+15:41:00.635 id=2878 [debug] handled request client -> server textDocument/hover in 3ms
+
+15:41:01.187 id=2879 [debug] handled request client -> server textDocument/codeAction in 409µs
+
+15:41:02.435 id=2880 [debug] handled request client -> server textDocument/codeAction in 427µs
+
+15:41:14.225 [debug] handled notification client -> server textDocument/didClose in 141µs
+
+15:41:14.629 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 6ms
