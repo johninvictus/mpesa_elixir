@@ -29,7 +29,7 @@ defmodule MpesaElixir.QrCodeTest do
 
   describe "generate/1" do
     test "successfully generates QR code" do
-      with_mock MpesaElixir.API,
+      with_mock MpesaElixir.API, [:passthrough],
         request: fn "/mpesa/qrcode/v1/generate", _options ->
           {:ok, %Req.Response{status: 200, body: @success_response}}
         end do
@@ -38,7 +38,7 @@ defmodule MpesaElixir.QrCodeTest do
     end
 
     test "handles error response" do
-      with_mock MpesaElixir.API,
+      with_mock MpesaElixir.API, [:passthrough],
         request: fn "/mpesa/qrcode/v1/generate", _options ->
           {:ok, %Req.Response{status: 400, body: @error_response}}
         end do
@@ -47,7 +47,7 @@ defmodule MpesaElixir.QrCodeTest do
     end
 
     test "handles network error" do
-      with_mock MpesaElixir.API,
+      with_mock MpesaElixir.API, [:passthrough],
         request: fn "/mpesa/qrcode/v1/generate", _options ->
           {:error, %Req.TransportError{reason: :timeout}}
         end do

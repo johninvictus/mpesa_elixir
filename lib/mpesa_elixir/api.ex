@@ -88,6 +88,18 @@ defmodule MpesaElixir.API do
     |> Req.request(opts)
   end
 
+  def handle_response({:ok, %Req.Response{status: 200, body: body}}) do
+    {:ok, body}
+  end
+
+  def handle_response({:ok, %Req.Response{status: _status, body: body}}) do
+    {:error, body}
+  end
+
+  def handle_response({:error, %Req.TransportError{reason: reason}}) do
+    {:error, reason}
+  end
+
   defp base_url do
     if Application.get_env(:mpesa_elixir, :sandbox, false) do
       "https://sandbox.safaricom.co.ke"

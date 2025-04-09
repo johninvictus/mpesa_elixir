@@ -26,15 +26,8 @@ defmodule MpesaElixir.QrCode do
         "Size" => request.size
       }
 
-    case API.request("/mpesa/qrcode/v1/generate", body: Jason.encode!(payload)) do
-      {:ok, %Req.Response{status: 200, body: body}} ->
-        {:ok, body}
-
-      {:ok, %Req.Response{status: _, body: body}} ->
-        {:error, body}
-
-      {:error, %Req.TransportError{reason: reason}} ->
-        {:error, reason}
-    end
+    "/mpesa/qrcode/v1/generate"
+    |> API.request(body: Jason.encode!(payload))
+    |> API.handle_response()
   end
 end
