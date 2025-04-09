@@ -2,6 +2,11 @@
 # and its dependencies with the aid of the Mix.Config module.
 import Config
 
+config :mpesa_elixir,
+  auth_req_options: [
+    plug: {Req.Test, MpesaElixir.API}
+  ]
+
 # config :mpesa_elixir,
 #   api_url: "https://sandbox.safaricom.co.ke",
 #   consumer_key: "",
@@ -27,7 +32,6 @@ import Config
 #   reversal_result_url: "",
 #   stk_call_back_url: "https://f8e607d1.ngrok.io/mpesa/callbacks/validation"
 
-
-  if File.exists?("config/config.secret.exs") do
-    import_config("config.secret.exs")
-  end
+if File.exists?("config/config.secret.exs") do
+  import_config("config.secret.exs")
+end

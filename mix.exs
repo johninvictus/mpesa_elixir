@@ -59,7 +59,8 @@ defmodule MpesaElixir.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4.5", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.18.5", only: [:dev, :test]},
-      {:inch_ex, only: [:dev, :test]}
+      {:inch_ex, only: [:dev, :test]},
+      {:plug, "~> 1.15", only: [:dev, :test]}
     ]
   end
 

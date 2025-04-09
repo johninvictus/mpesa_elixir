@@ -1,5 +1,5 @@
 defmodule MpesaElixir.AuthServer do
-@moduledoc """
+  @moduledoc """
   A GenServer implementation that manages Mpesa API authentication tokens.
 
   This server is responsible for:
@@ -74,25 +74,40 @@ defmodule MpesaElixir.AuthServer do
 
   @impl true
   def handle_continue(:fetch_token, state) do
+    auth_options = [
+      auth:
+        {:basic,
+         "#{Application.get_env(:mpesa_elixir, :consumer_key, "")}:#{Application.get_env(:mpesa_elixir, :consumer_secret, "")}"}
+    ]
+
+    options =
+      if Mix.env() == :test,
+        do:
+          Keyword.merge(
+            Application.get_env(:mpesa_elixir, :auth_req_options, []),
+            auth_options
+          ),
+        else: auth_options
+
     result =
-      API.request("/oauth/v1/generate?grant_type=client_credentials",
-        auth:
-          {:basic,
-           "#{Application.get_env(:mpesa_elixir, :consumer_key, "")}:#{Application.get_env(:mpesa_elixir, :consumer_secret, "")}"}
+      API.request(
+        "/oauth/v1/generate?grant_type=client_credentials",
+        options
       )
 
     case result do
       {:ok, %{status: status, body: body}} when status == 200 ->
         access_token = body["access_token"]
         expires_in = String.to_integer(body["expires_in"])
-        Process.send_after(self(), :refresh_token, :timer.seconds(expires_in - 100))
+
+        Process.send_after(self(), :refresh_token, expires_in - 100)
 
         true = :ets.insert(state, {:access_token, access_token})
 
         {:noreply, state}
 
       resp ->
-        Logger.error(resp)
+        Logger.error("Error fetching token: #{inspect(resp)}")
         {:stop, :error, state}
     end
   end
