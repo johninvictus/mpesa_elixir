@@ -22,5 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 mpesa_elixir-*.tar
 
-config/secret.config.ex
+config/secret.config.exs
 

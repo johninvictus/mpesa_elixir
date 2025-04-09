@@ -44,7 +44,7 @@ defmodule MpesaElixir.AuthServerTest do
       conn
       |> Req.Test.json(%{
         "access_token" => "initial_token_#{Enum.random(1..1000)}",
-        "expires_in" => "200"
+        "expires_in" => "1"
       })
     end)
 
@@ -69,10 +69,15 @@ defmodule MpesaElixir.AuthServerTest do
       Req.Test.transport_error(conn, :timeout)
     end)
 
-    {:ok, _pid} = MpesaElixir.AuthServer.start_link([])
-    :timer.sleep(100)
+    log =
+      capture_log(fn ->
+        {:ok, _pid} = MpesaElixir.AuthServer.start_link([])
+        :timer.sleep(100)
 
-    assert MpesaElixir.AuthServer.get_token() == ""
+        assert MpesaElixir.AuthServer.get_token() == ""
+      end)
+
+    assert log =~ "timeout"
   end
 
   test "invalid grant type passed" do

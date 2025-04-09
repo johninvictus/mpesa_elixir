@@ -100,7 +100,7 @@ defmodule MpesaElixir.AuthServer do
         access_token = body["access_token"]
         expires_in = String.to_integer(body["expires_in"])
 
-        Process.send_after(self(), :refresh_token, expires_in - 100)
+        Process.send_after(self(), :refresh_token, :timer.seconds(expires_in) - 900)
 
         true = :ets.insert(state, {:access_token, access_token})
 
