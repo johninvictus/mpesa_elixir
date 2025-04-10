@@ -56,10 +56,13 @@ defmodule MpesaElixir.MixProject do
       {:timex, "~> 3.1"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:req, "~> 0.5.0"},
+      {:typed_struct, "~> 0.3.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4.5", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.18.5", only: [:dev, :test]},
-      {:inch_ex, only: [:dev, :test]}
+      {:inch_ex, only: [:dev, :test]},
+      {:plug, "~> 1.15", only: [:dev, :test]},
+      {:mock, "~> 0.3.9", only: :test}
     ]
   end
 
