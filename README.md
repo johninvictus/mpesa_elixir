@@ -1,5 +1,7 @@
 # MpesaElixir
 
+# NOTE: THIS LIBRARY IS BEING UPDATED ******************
+
 ## RUN WORKFLOW LOCALLY
 > gh workflow run ci.yml
 
