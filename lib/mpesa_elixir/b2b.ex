@@ -38,7 +38,7 @@ defmodule MpesaElixir.B2b do
       "AccountReference" => account_reference
     }
 
-    MpesaElixir.post("//b2b/v1/paymentrequest", body: Poison.encode!(body))
+    MpesaElixir.post("/b2b/v1/paymentrequest", body: Poison.encode!(body))
     |> MpesaElixir.process_response()
   end
 end
