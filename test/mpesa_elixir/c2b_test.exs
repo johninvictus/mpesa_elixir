@@ -1,11 +1,17 @@
 defmodule MpesaElixir.C2bTest do
   @moduledoc false
-  use ExUnit.Case, async: false
-  import Mock
+  use ExUnit.Case, async: true
+  import Mox
 
-  alias MpesaElixir.API
   alias MpesaElixir.C2b
   alias MpesaElixir.C2b.RegisterRequest
+
+  setup :verify_on_exit!
+
+  setup do
+    stub_with(MpesaElixir.APIMock, MpesaElixir.API)
+    :ok
+  end
 
   describe "register_urls/1" do
     @valid_request %RegisterRequest{
@@ -27,30 +33,27 @@ defmodule MpesaElixir.C2bTest do
     }
 
     test "successfully registers URLs" do
-      with_mock API, [:passthrough],
-        request: fn "/mpesa/c2b/v1/registerurl", _options ->
-          {:ok, %Req.Response{status: 200, body: @success_response}}
-        end do
-        assert {:ok, @success_response} == C2b.register_urls(@valid_request)
-      end
+      expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
+        {:ok, %Req.Response{status: 200, body: @success_response}}
+      end)
+
+      assert {:ok, @success_response} == C2b.register_urls(@valid_request)
     end
 
     test "handles error response" do
-      with_mock API, [:passthrough],
-        request: fn "/mpesa/c2b/v1/registerurl", _options ->
-          {:ok, %Req.Response{status: 400, body: @error_response}}
-        end do
-        assert {:error, @error_response} == C2b.register_urls(@valid_request)
-      end
+      expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
+        {:ok, %Req.Response{status: 400, body: @error_response}}
+      end)
+
+      assert {:error, @error_response} == C2b.register_urls(@valid_request)
     end
 
     test "handles network error" do
-      with_mock API, [:passthrough],
-        request: fn "/mpesa/c2b/v1/registerurl", _options ->
-          {:error, %Req.TransportError{reason: :timeout}}
-        end do
-        assert {:error, :timeout} == C2b.register_urls(@valid_request)
-      end
+      expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
+        {:error, %Req.TransportError{reason: :timeout}}
+      end)
+
+      assert {:error, :timeout} == C2b.register_urls(@valid_request)
     end
   end
 end

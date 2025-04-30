@@ -63,7 +63,7 @@ defmodule MpesaElixir.MixProject do
       {:inch_ex, only: [:dev, :test]},
       {:plug, "~> 1.15", only: [:dev, :test]},
       {:mock, "~> 0.3.9", only: :test},
-      {:bypass, "~> 2.1", only: :test}
+      {:mox, "~> 1.2.0", only: :test}
     ]
   end
 

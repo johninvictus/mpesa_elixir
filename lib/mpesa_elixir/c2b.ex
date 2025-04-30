@@ -72,6 +72,9 @@ defmodule MpesaElixir.C2b do
   """
   @spec register_urls(RegisterRequest.t()) :: {:ok, map()} | {:error, String.t()}
   def register_urls(%RegisterRequest{} = request) do
+    # Get the API module to use (real or mock)
+    api_module = Application.get_env(:mpesa_elixir, :api_module, MpesaElixir.API)
+
     payload = %{
       "ShortCode" => request.short_code,
       "ResponseType" => request.response_type,
@@ -80,7 +83,7 @@ defmodule MpesaElixir.C2b do
     }
 
     "/mpesa/c2b/v1/registerurl"
-    |> API.request(body: payload)
+    |> api_module.request(body: payload)
     |> API.handle_response()
   end
 end
