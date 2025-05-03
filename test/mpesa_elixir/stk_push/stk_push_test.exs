@@ -146,6 +146,5 @@ defmodule MpesaElixir.StkPush.StkPushTest do
 
       assert {:error, @error_response} == StkPush.query_stk_push_status(@invalid_request)
     end
-
   end
 end
