@@ -5,7 +5,7 @@ defmodule MpesaElixir.Application do
 
   def start(_type, _args) do
     dont_start_in_test =
-      if Application.get_env(:mpesa_elixir, :env)  == :test do
+      if Application.get_env(:mpesa_elixir, :env) == :test do
         []
       else
         [MpesaElixir.AuthServer]
