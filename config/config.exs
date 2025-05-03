@@ -7,13 +7,6 @@ config :mpesa_elixir,
     plug: {Req.Test, MpesaElixir.API}
   ]
 
-config :tzdata,
-  data_dir: "./test/testdata/tzdata",
-  autoupdate: :disabled,
-  # Definitely a hack, but tzdata uses this key to determine which http client it uses, so if it
-  # actually tries to use hackney, it will get an error
-  http_client: nil
-
 # config :mpesa_elixir,
 #   api_url: "https://sandbox.safaricom.co.ke",
 #   consumer_key: "",

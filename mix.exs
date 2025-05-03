@@ -34,7 +34,7 @@ defmodule MpesaElixir.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :httpotion, :timex],
+      extra_applications: [:logger],
       mod: {MpesaElixir.Application, []}
     ]
   end
@@ -46,21 +46,12 @@ defmodule MpesaElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # will be removed, will use Req
-      {:httpotion, "~> 3.1.0"},
-      # will be removed, will use Jason
-      {:poison, "~> 3.1"},
-      {:rsa, "~> 1.0"},
-      {:ex_crypto, "~> 0.9.0"},
-      # will be removed after full update
-      {:timex, "~> 3.1"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:req, "~> 0.5.0"},
       {:typed_struct, "~> 0.3.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4.5", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.18.5", only: [:dev, :test]},
-      {:inch_ex, only: [:dev, :test]},
       {:plug, "~> 1.15", only: [:dev, :test]},
       {:mox, "~> 1.2.0", only: :test}
     ]

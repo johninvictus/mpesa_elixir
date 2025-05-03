@@ -47,8 +47,8 @@ defmodule MpesaElixir.StkPush do
   """
 
   alias MpesaElixir.API
-  alias MpesaElixir.StkPush.Request
   alias MpesaElixir.StkPush.QueryRequest
+  alias MpesaElixir.StkPush.Request
 
   @doc """
   Initiates an STK Push request to the M-Pesa API.

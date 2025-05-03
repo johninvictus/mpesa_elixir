@@ -2,9 +2,10 @@ defmodule MpesaElixir.StkPush.StkPushTest do
   @moduledoc false
   use ExUnit.Case, async: true
   import Mox
+
   alias MpesaElixir.StkPush
-  alias MpesaElixir.StkPush.Request
   alias MpesaElixir.StkPush.QueryRequest
+  alias MpesaElixir.StkPush.Request
 
   setup :verify_on_exit!
 
@@ -97,20 +98,27 @@ defmodule MpesaElixir.StkPush.StkPushTest do
       "ResponseDescription" => "Invalid Request Payload"
     }
 
-    test "successfully queries STK Push status" do
-      request = %QueryRequest{
-        business_short_code: "174379",
-        password:
-          "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
-        timestamp: "20160216165627",
-        checkout_request_id: "ws_CO_191220191020363925"
-      }
+    @valid_request %QueryRequest{
+      business_short_code: "174379",
+      password:
+        "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
+      timestamp: "20160216165627",
+      checkout_request_id: "ws_CO_191220191020363925"
+    }
 
+    @invalid_request %QueryRequest{
+      business_short_code: "33333",
+      password: nil,
+      timestamp: nil,
+      checkout_request_id: "ws_CO_191220191020363925"
+    }
+
+    test "successfully queries STK Push status" do
       expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
         {:ok, %Req.Response{status: 200, body: @success_response}}
       end)
 
-      assert {:ok, @success_response} == StkPush.query_stk_push_status(request)
+      assert {:ok, @success_response} == StkPush.query_stk_push_status(@valid_request)
     end
 
     test "handles missing password and timestamp" do
@@ -130,5 +138,14 @@ defmodule MpesaElixir.StkPush.StkPushTest do
 
       assert {:ok, @success_response} == StkPush.query_stk_push_status(request)
     end
+
+    test "handles error response" do
+      expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
+        {:ok, %Req.Response{status: 400, body: @error_response}}
+      end)
+
+      assert {:error, @error_response} == StkPush.query_stk_push_status(@invalid_request)
+    end
+
   end
 end
