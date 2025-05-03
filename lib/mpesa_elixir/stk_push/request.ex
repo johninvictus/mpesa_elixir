@@ -8,6 +8,7 @@ defmodule MpesaElixir.StkPush.Request do
   """
   use TypedStruct
   alias MpesaElixir.Utils
+  alias __MODULE__
 
   typedstruct enforce: true do
     @typedoc "STK Push request parameters"
@@ -73,6 +74,8 @@ defmodule MpesaElixir.StkPush.Request do
   Converts the struct to a map with keys formatted as required by the M-PESA API.
   This function transforms snake_case field names to PascalCase as expected by the API.
 
+  will set the password and timestamp if they are not provided.
+
   ## Examples
 
       iex> request = %MpesaElixir.StkPush.Request{
@@ -103,17 +106,21 @@ defmodule MpesaElixir.StkPush.Request do
         "TransactionDesc" => "Test"
       }
   """
-  def to_api_map(request) do
-    request
-    |> Map.from_struct()
-    |> Enum.map(fn {k, v} -> {format_key(k), v} end)
-    |> Map.new()
-  end
+  def to_api_map(%Request{password: password, timestamp: timestamp} = request) do
+    pass_key = Application.get_env(:mpesa_elixir, :pass_key, "")
 
-  defp format_key(key) do
-    key
-    |> Atom.to_string()
-    |> String.split("_")
-    |> Enum.map_join(&(Utils.capitalize(&1, special_cases: ["url"])))
+    request =
+      if is_nil(password) || is_nil(timestamp) do
+        timestamp = Utils.generate_timestamp()
+        password = Utils.generate_password(request.business_short_code, pass_key, timestamp)
+
+        request
+        |> Map.put(:password, password)
+        |> Map.put(:timestamp, timestamp)
+      else
+        request
+      end
+
+    Utils.to_api_map(request, special_cases: ["url"])
   end
 end

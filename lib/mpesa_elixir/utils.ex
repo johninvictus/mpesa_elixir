@@ -40,4 +40,39 @@ defmodule MpesaElixir.Utils do
         else: String.capitalize(word)
     end)
   end
+
+  @doc """
+  Converts a struct to a map with keys formatted as required by the M-PESA API.
+  This function transforms snake_case field names to PascalCase as expected by the API.
+  ## Examples
+
+      iex> request = %MpesaElixir.StkPush.Request{
+      ...>   business_short_code: "174379",
+      ...>   password: "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
+      ...>   timestamp: "20160216165627",
+      ...>   transaction_type: "CustomerPayBillOnline",
+      ...>   amount: "1",
+      ...>   party_a: "254708374149",
+      ...>   party_b: "174379",
+      ...>   phone_number: "254708374149",
+      ...>   call_back_url: "https://mydomain.com/path",
+      ...>   account_reference: "Test",
+      ...>   transaction_desc: "Test"
+      ...> }
+      iex> MpesaElixir.Utils.to_api_map(request, )
+  """
+  @spec to_api_map(map()) :: map()
+  def to_api_map(request, options \\ []) do
+    request
+    |> Map.from_struct()
+    |> Enum.map(fn {k, v} -> {format_key(k, options), v} end)
+    |> Map.new()
+  end
+
+  defp format_key(key, options) do
+    key
+    |> Atom.to_string()
+    |> String.split("_")
+    |> Enum.map_join(&capitalize(&1, options))
+  end
 end

@@ -48,7 +48,6 @@ defmodule MpesaElixir.StkPush do
 
   alias MpesaElixir.API
   alias MpesaElixir.StkPush.Request
-  alias MpesaElixir.Utils
 
   @doc """
   Initiates an STK Push request to the M-Pesa API.
@@ -86,23 +85,19 @@ defmodule MpesaElixir.StkPush do
       MpesaElixir.StkPush.request(request)
   """
   @spec request(Request.t()) :: {:ok, map()} | {:error, any()}
-  def request(%Request{password: password, timestamp: timestamp} = request) do
+  def request(%Request{} = request) do
     api_module = Application.get_env(:mpesa_elixir, :api_module, MpesaElixir.API)
-    pass_key = Application.get_env(:mpesa_elixir, :pass_key, "")
-
-    request =
-      if is_nil(password) || is_nil(timestamp) do
-        timestamp = Utils.generate_timestamp()
-        password = Utils.generate_password(request.business_short_code, pass_key, timestamp)
-
-        request
-        |> Map.put(:password, password)
-        |> Map.put(:timestamp, timestamp)
-      else
-        request
-      end
 
     "/mpesa/stkpush/v1/processrequest"
+    |> api_module.request(body: Request.to_api_map(request))
+    |> API.handle_response()
+  end
+
+  @spec request(Request.t()) :: {:ok, map()} | {:error, any()}
+  def query_stk_push_status(request) do
+    api_module = Application.get_env(:mpesa_elixir, :api_module, MpesaElixir.API)
+
+    "/mpesa/stkpushquery/v1/query"
     |> api_module.request(body: Request.to_api_map(request))
     |> API.handle_response()
   end
