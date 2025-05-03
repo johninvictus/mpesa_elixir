@@ -16,6 +16,9 @@ defmodule MpesaElixir.QrCode do
 
   @spec generate(Request.t()) :: {:ok, map()} | {:error, String.t()}
   def generate(%Request{} = request) do
+    # Get the API module to use (real or mock)
+    api_module = Application.get_env(:mpesa_elixir, :api_module, MpesaElixir.API)
+
     payload =
       %{
         "MerchantName" => request.merchant_name,
@@ -27,7 +30,7 @@ defmodule MpesaElixir.QrCode do
       }
 
     "/mpesa/qrcode/v1/generate"
-    |> API.request(body: Jason.encode!(payload))
+    |> api_module.request(body: Jason.encode!(payload))
     |> API.handle_response()
   end
 end
