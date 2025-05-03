@@ -50,7 +50,7 @@ defmodule MpesaElixir.MixProject do
       {:req, "~> 0.5.0"},
       {:typed_struct, "~> 0.3.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.4.5", only: [:dev], runtime: false},
+      {:dialyxir, "~> 1.4.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.18.5", only: [:dev, :test]},
       {:plug, "~> 1.15", only: [:dev, :test]},
       {:mox, "~> 1.2.0", only: :test}

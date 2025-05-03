@@ -5,7 +5,8 @@ import Config
 config :mpesa_elixir,
   auth_req_options: [
     plug: {Req.Test, MpesaElixir.API}
-  ]
+  ],
+  env: Mix.env()
 
 # config :mpesa_elixir,
 #   api_url: "https://sandbox.safaricom.co.ke",
