@@ -4,6 +4,7 @@ defmodule MpesaElixir.StkPush.StkPushTest do
   import Mox
   alias MpesaElixir.StkPush
   alias MpesaElixir.StkPush.Request
+  alias MpesaElixir.StkPush.QueryRequest
 
   setup :verify_on_exit!
 
@@ -50,9 +51,10 @@ defmodule MpesaElixir.StkPush.StkPushTest do
     end
 
     test "handles missing password and timestamp" do
-      request = @valid_request
-      |> Map.put(:password, nil)
-      |> Map.put(:timestamp, nil)
+      request =
+        @valid_request
+        |> Map.put(:password, nil)
+        |> Map.put(:timestamp, nil)
 
       expect(MpesaElixir.APIMock, :request, fn _url, opts ->
         refute is_nil(opts[:body]["Timestamp"])
@@ -77,6 +79,56 @@ defmodule MpesaElixir.StkPush.StkPushTest do
       end)
 
       assert {:error, :timeout} == StkPush.request(@valid_request)
+    end
+  end
+
+  describe "query_stk_push_status" do
+    @success_response %{
+      "ResponseCode" => "0",
+      "ResponseDescription" => "The service request has been accepted successfully",
+      "MerchantRequestID" => "22205-34066-1",
+      "CheckoutRequestID" => "ws_CO_13012021093521236557",
+      "ResultCode" => "0",
+      "ResultDesc" => "The service request is processed successfully."
+    }
+
+    @error_response %{
+      "ResponseCode" => "400.002.05",
+      "ResponseDescription" => "Invalid Request Payload"
+    }
+
+    test "successfully queries STK Push status" do
+      request = %QueryRequest{
+        business_short_code: "174379",
+        password:
+          "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
+        timestamp: "20160216165627",
+        checkout_request_id: "ws_CO_191220191020363925"
+      }
+
+      expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
+        {:ok, %Req.Response{status: 200, body: @success_response}}
+      end)
+
+      assert {:ok, @success_response} == StkPush.query_stk_push_status(request)
+    end
+
+    test "handles missing password and timestamp" do
+      request =
+        %QueryRequest{
+          business_short_code: "174379",
+          password: nil,
+          timestamp: nil,
+          checkout_request_id: "ws_CO_191220191020363925"
+        }
+
+      expect(MpesaElixir.APIMock, :request, fn _url, opts ->
+        refute is_nil(opts[:body]["Timestamp"])
+        refute is_nil(opts[:body]["Password"])
+        {:ok, %Req.Response{status: 200, body: @success_response}}
+      end)
+
+      assert {:ok, @success_response} == StkPush.query_stk_push_status(request)
     end
   end
 end

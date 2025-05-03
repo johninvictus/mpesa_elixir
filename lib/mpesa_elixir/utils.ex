@@ -59,7 +59,7 @@ defmodule MpesaElixir.Utils do
       ...>   account_reference: "Test",
       ...>   transaction_desc: "Test"
       ...> }
-      iex> MpesaElixir.Utils.to_api_map(request, )
+      iex> MpesaElixir.Utils.to_api_map(request, special_cases: ["url"])
   """
   @spec to_api_map(map()) :: map()
   def to_api_map(request, options \\ []) do

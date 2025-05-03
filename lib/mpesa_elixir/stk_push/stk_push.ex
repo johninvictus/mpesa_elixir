@@ -48,6 +48,7 @@ defmodule MpesaElixir.StkPush do
 
   alias MpesaElixir.API
   alias MpesaElixir.StkPush.Request
+  alias MpesaElixir.StkPush.QueryRequest
 
   @doc """
   Initiates an STK Push request to the M-Pesa API.
@@ -93,12 +94,12 @@ defmodule MpesaElixir.StkPush do
     |> API.handle_response()
   end
 
-  @spec request(Request.t()) :: {:ok, map()} | {:error, any()}
-  def query_stk_push_status(request) do
+  @spec query_stk_push_status(QueryRequest.t()) :: {:ok, map()} | {:error, any()}
+  def query_stk_push_status(%QueryRequest{} = request) do
     api_module = Application.get_env(:mpesa_elixir, :api_module, MpesaElixir.API)
 
     "/mpesa/stkpushquery/v1/query"
-    |> api_module.request(body: Request.to_api_map(request))
+    |> api_module.request(body: QueryRequest.to_api_map(request))
     |> API.handle_response()
   end
 end
