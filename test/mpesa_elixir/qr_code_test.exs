@@ -34,6 +34,7 @@ defmodule MpesaElixir.QrCodeTest do
       expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
         {:ok, %Req.Response{status: 200, body: @success_response}}
       end)
+
       assert {:ok, @success_response} == MpesaElixir.QrCode.generate(@valid_request)
     end
 
@@ -41,6 +42,7 @@ defmodule MpesaElixir.QrCodeTest do
       expect(MpesaElixir.APIMock, :request, fn _url, _opts ->
         {:ok, %Req.Response{status: 400, body: @error_response}}
       end)
+
       assert {:error, @error_response} == MpesaElixir.QrCode.generate(@valid_request)
     end
 
