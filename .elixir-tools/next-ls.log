@@ -308,3 +308,2200 @@
 00:05:33.298 [info] Compiled mpesa_elixir!
 
 00:05:33.569 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 586µs
+
+00:06:03.257 id=420 [debug] sent request server -> client window/workDoneProgress/create
+
+00:06:03.258 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:06:03.258 [debug] sent notification server -> client $/progress
+
+00:06:03.305 [debug] sent notification server -> client $/progress
+
+00:06:03.305 [debug] sent notification server -> client window/logMessage
+
+00:06:03.305 [info] Compiled mpesa_elixir!
+
+00:06:03.580 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 144µs
+
+00:06:04.025 id=447 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:06:04.654 id=448 [debug] handled request client -> server textDocument/codeAction in 231µs
+
+00:06:05.626 [debug] handled notification client -> server textDocument/didClose in 71µs
+
+00:06:12.524 [debug] handled notification client -> server textDocument/didOpen in 1ms
+
+00:06:12.527 id=449 [debug] handled request client -> server textDocument/codeAction in 606µs
+
+00:06:12.529 id=450 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:12.825 id=451 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:13.213 id=452 [debug] handled request client -> server textDocument/hover in 493µs
+
+00:06:17.389 id=453 [debug] handled request client -> server textDocument/codeAction in 446µs
+
+00:06:42.052 id=454 [debug] handled request client -> server textDocument/hover in 372µs
+
+00:06:42.890 id=455 [debug] handled request client -> server textDocument/hover in 830µs
+
+00:06:44.482 id=456 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:06:45.070 id=457 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:06:46.157 [debug] handled notification client -> server textDocument/didChange in 895µs
+
+00:06:46.157 [debug] sent notification server -> client window/logMessage
+
+00:06:46.157 [info] expanding on the runtime node
+
+00:06:46.161 id=458 [debug] handled request client -> server textDocument/completion in 4ms
+
+00:06:46.387 id=459 [debug] handled request client -> server textDocument/codeAction in 207µs
+
+00:06:46.388 id=460 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:46.485 [debug] handled notification client -> server textDocument/didChange in 409µs
+
+00:06:46.496 id=461 [debug] handled request client -> server completionItem/resolve in 10ms
+
+00:06:46.497 [debug] sent notification server -> client window/logMessage
+
+00:06:46.497 id=462 [debug] handled request client -> server textDocument/documentSymbol in 749µs
+
+00:06:46.695 [debug] handled notification client -> server textDocument/didChange in 428µs
+
+00:06:46.697 id=463 [debug] handled request client -> server completionItem/resolve in 2ms
+
+00:06:46.939 id=464 [debug] handled request client -> server textDocument/codeAction in 339µs
+
+00:06:46.941 id=465 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:47.038 id=466 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:47.378 [debug] handled notification client -> server textDocument/didChange in 362µs
+
+00:06:47.380 id=467 [debug] handled request client -> server completionItem/resolve in 2ms
+
+00:06:48.089 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+00:06:48.089 id=468 [debug] handled request client -> server textDocument/codeAction in 227µs
+
+00:06:48.090 id=469 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:48.187 id=470 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:06:48.631 id=471 [debug] handled request client -> server textDocument/hover in 980µs
+
+00:06:48.970 id=472 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:06:49.234 id=473 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:06:49.670 id=474 [debug] handled request client -> server textDocument/codeAction in 325µs
+
+00:06:50.202 id=475 [debug] handled request client -> server textDocument/hover in 977µs
+
+00:06:50.573 id=476 [debug] handled request client -> server textDocument/codeAction in 232µs
+
+00:06:51.007 [debug] handled notification client -> server textDocument/didChange in 824µs
+
+00:06:51.008 id=477 [debug] handled request client -> server textDocument/codeAction in 239µs
+
+00:06:51.011 id=478 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:06:51.110 id=479 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:06:52.016 [debug] handled notification client -> server textDocument/didChange in 796µs
+
+00:06:52.017 id=480 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:06:52.019 id=481 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:06:52.115 id=482 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:06:52.226 id=452 [debug] sent request server -> client window/workDoneProgress/create
+
+00:06:52.226 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:06:52.227 [debug] sent notification server -> client $/progress
+
+00:06:52.269 [debug] sent notification server -> client window/logMessage
+
+00:06:52.269 [info] Compiling 1 file (.ex)
+
+
+00:06:52.271 id=484 [debug] sent request server -> client window/workDoneProgress/create
+
+00:06:52.272 [debug] sent notification server -> client $/progress
+
+00:06:52.298 [debug] sent notification server -> client $/progress
+
+00:06:52.298 [debug] sent notification server -> client window/logMessage
+
+00:06:52.298 [info] Compiled mpesa_elixir!
+
+00:06:52.399 [debug] sent notification server -> client $/progress
+
+00:06:52.571 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 156µs
+
+00:06:52.808 id=483 [debug] handled request client -> server textDocument/hover in 409µs
+
+00:06:52.991 id=484 [debug] handled request client -> server textDocument/hover in 925µs
+
+00:06:53.280 id=485 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:06:53.333 id=516 [debug] sent request server -> client window/workDoneProgress/create
+
+00:06:53.334 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:06:53.334 [debug] sent notification server -> client $/progress
+
+00:06:53.379 [debug] sent notification server -> client $/progress
+
+00:06:53.380 [debug] sent notification server -> client window/logMessage
+
+00:06:53.380 [info] Compiled mpesa_elixir!
+
+00:06:53.668 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 155µs
+
+00:06:54.161 id=486 [debug] handled request client -> server textDocument/codeAction in 215µs
+
+00:06:54.209 id=548 [debug] sent request server -> client window/workDoneProgress/create
+
+00:06:54.209 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:06:54.209 [debug] sent notification server -> client $/progress
+
+00:06:54.254 [debug] sent notification server -> client $/progress
+
+00:06:54.254 [debug] sent notification server -> client window/logMessage
+
+00:06:54.254 [info] Compiled mpesa_elixir!
+
+00:06:54.547 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 216µs
+
+00:07:01.308 [debug] handled notification client -> server textDocument/didClose in 739µs
+
+00:07:03.350 [debug] handled notification client -> server textDocument/didOpen in 318µs
+
+00:07:03.353 id=487 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:07:03.353 id=488 [debug] handled request client -> server textDocument/documentSymbol in 544µs
+
+00:07:03.602 id=489 [debug] handled request client -> server textDocument/codeAction in 116µs
+
+00:07:03.652 id=490 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:04.179 id=491 [debug] handled request client -> server textDocument/hover in 714µs
+
+00:07:05.000 [debug] handled notification client -> server textDocument/didClose in 58µs
+
+00:07:12.203 [debug] handled notification client -> server textDocument/didOpen in 80µs
+
+00:07:12.206 id=492 [debug] handled request client -> server textDocument/codeAction in 117µs
+
+00:07:12.206 id=493 [debug] handled request client -> server textDocument/documentSymbol in 164µs
+
+00:07:12.504 id=494 [debug] handled request client -> server textDocument/documentSymbol in 165µs
+
+00:07:13.993 id=495 [debug] handled request client -> server textDocument/codeAction in 298µs
+
+00:07:14.552 [debug] handled notification client -> server textDocument/didChange in 178µs
+
+00:07:14.553 id=496 [debug] handled request client -> server textDocument/documentSymbol in 311µs
+
+00:07:14.656 id=497 [debug] handled request client -> server textDocument/documentSymbol in 269µs
+
+00:07:20.412 [debug] handled notification client -> server textDocument/didChange in 175µs
+
+00:07:20.413 [debug] sent notification server -> client window/logMessage
+
+00:07:20.413 [info] expanding on the runtime node
+
+00:07:20.415 id=498 [debug] handled request client -> server textDocument/completion in 3ms
+
+00:07:20.426 id=499 [debug] handled request client -> server completionItem/resolve in 5ms
+
+00:07:20.521 [debug] handled notification client -> server textDocument/didChange in 113µs
+
+00:07:20.524 id=500 [debug] handled request client -> server completionItem/resolve in 2ms
+
+00:07:20.767 id=501 [debug] handled request client -> server textDocument/codeAction in 186µs
+
+00:07:20.768 id=502 [debug] handled request client -> server textDocument/documentSymbol in 225µs
+
+00:07:20.870 id=503 [debug] handled request client -> server textDocument/documentSymbol in 347µs
+
+00:07:21.134 [debug] handled notification client -> server textDocument/didChange in 194µs
+
+00:07:21.136 id=504 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:07:21.390 id=505 [debug] handled request client -> server textDocument/codeAction in 271µs
+
+00:07:21.391 id=506 [debug] handled request client -> server textDocument/documentSymbol in 371µs
+
+00:07:21.490 id=507 [debug] handled request client -> server textDocument/documentSymbol in 525µs
+
+00:07:21.918 [debug] handled notification client -> server textDocument/didChange in 175µs
+
+00:07:21.920 [debug] sent notification server -> client window/logMessage
+
+00:07:21.920 [info] expanding on the runtime node
+
+00:07:21.922 id=508 [debug] handled request client -> server textDocument/completion in 2ms
+
+00:07:21.927 id=509 [debug] handled request client -> server completionItem/resolve in 2ms
+
+00:07:22.302 [debug] handled notification client -> server textDocument/didChange in 118µs
+
+00:07:22.303 id=510 [debug] handled request client -> server textDocument/documentSymbol in 328µs
+
+00:07:22.404 id=511 [debug] handled request client -> server textDocument/documentSymbol in 338µs
+
+00:07:22.501 [debug] handled notification client -> server textDocument/didChange in 107µs
+
+00:07:22.501 [debug] sent notification server -> client window/logMessage
+
+00:07:22.501 [info] expanding on the runtime node
+
+00:07:22.504 id=512 [debug] handled request client -> server textDocument/completion in 3ms
+
+00:07:22.662 [debug] handled notification client -> server textDocument/didChange in 187µs
+
+00:07:22.664 id=513 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:07:23.271 [debug] handled notification client -> server textDocument/didChange in 268µs
+
+00:07:23.272 id=514 [debug] handled request client -> server textDocument/documentSymbol in 944µs
+
+00:07:23.371 [debug] handled notification client -> server textDocument/didChange in 127µs
+
+00:07:23.372 id=515 [debug] handled request client -> server textDocument/documentSymbol in 248µs
+
+00:07:23.729 [debug] handled notification client -> server textDocument/didChange in 128µs
+
+00:07:23.729 id=516 [debug] handled request client -> server textDocument/codeAction in 152µs
+
+00:07:23.730 id=517 [debug] handled request client -> server textDocument/documentSymbol in 353µs
+
+00:07:23.805 [debug] handled notification client -> server textDocument/didChange in 125µs
+
+00:07:23.805 [debug] sent notification server -> client window/logMessage
+
+00:07:23.805 [info] expanding on the runtime node
+
+00:07:23.807 id=518 [debug] handled request client -> server textDocument/completion in 2ms
+
+00:07:23.811 id=519 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:07:23.829 id=520 [debug] handled request client -> server textDocument/documentSymbol in 854µs
+
+00:07:24.049 id=521 [debug] handled request client -> server textDocument/codeAction in 169µs
+
+00:07:24.050 id=522 [debug] handled request client -> server textDocument/documentSymbol in 242µs
+
+00:07:24.154 id=523 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:25.375 [debug] handled notification client -> server textDocument/didChange in 143µs
+
+00:07:25.375 [debug] sent notification server -> client window/logMessage
+
+00:07:25.375 [info] expanding on the runtime node
+
+00:07:25.377 id=524 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:25.620 id=525 [debug] handled request client -> server textDocument/codeAction in 280µs
+
+00:07:25.621 id=526 [debug] handled request client -> server textDocument/documentSymbol in 502µs
+
+00:07:25.694 [debug] handled notification client -> server textDocument/didChange in 160µs
+
+00:07:25.694 [debug] sent notification server -> client window/logMessage
+
+00:07:25.694 [info] expanding on the runtime node
+
+00:07:25.696 id=527 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:25.715 id=528 [debug] handled request client -> server textDocument/documentSymbol in 266µs
+
+00:07:25.931 id=529 [debug] handled request client -> server textDocument/codeAction in 408µs
+
+00:07:25.933 id=530 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:26.037 id=531 [debug] handled request client -> server textDocument/documentSymbol in 410µs
+
+00:07:31.956 [debug] handled notification client -> server textDocument/didChange in 351µs
+
+00:07:31.957 id=532 [debug] handled request client -> server textDocument/codeAction in 308µs
+
+00:07:31.959 id=533 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:32.057 id=534 [debug] handled request client -> server textDocument/documentSymbol in 581µs
+
+00:07:34.592 id=535 [debug] handled request client -> server textDocument/codeAction in 396µs
+
+00:07:42.110 id=536 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:07:42.521 id=537 [debug] handled request client -> server textDocument/codeAction in 396µs
+
+00:07:43.182 [debug] handled notification client -> server textDocument/didChange in 199µs
+
+00:07:43.182 [debug] sent notification server -> client window/logMessage
+
+00:07:43.183 [info] expanding on the runtime node
+
+00:07:43.184 id=538 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:43.361 [debug] handled notification client -> server textDocument/didChange in 203µs
+
+00:07:43.364 id=539 [debug] handled request client -> server completionItem/resolve in 2ms
+
+00:07:43.726 [debug] handled notification client -> server textDocument/didChange in 336µs
+
+00:07:43.726 id=540 [debug] handled request client -> server textDocument/codeAction in 396µs
+
+00:07:43.727 id=541 [debug] handled request client -> server textDocument/documentSymbol in 479µs
+
+00:07:43.821 [debug] handled notification client -> server textDocument/didChange in 844µs
+
+00:07:43.822 id=542 [debug] handled request client -> server textDocument/documentSymbol in 435µs
+
+00:07:44.038 id=543 [debug] handled request client -> server textDocument/codeAction in 280µs
+
+00:07:44.038 id=544 [debug] handled request client -> server textDocument/documentSymbol in 436µs
+
+00:07:44.144 id=545 [debug] handled request client -> server textDocument/documentSymbol in 466µs
+
+00:07:46.419 [debug] handled notification client -> server textDocument/didChange in 344µs
+
+00:07:46.419 id=546 [debug] handled request client -> server textDocument/codeAction in 320µs
+
+00:07:46.420 id=547 [debug] handled request client -> server textDocument/documentSymbol in 518µs
+
+00:07:46.520 id=548 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:47.701 id=549 [debug] handled request client -> server textDocument/codeAction in 407µs
+
+00:07:48.559 id=550 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:07:49.092 id=551 [debug] handled request client -> server textDocument/codeAction in 363µs
+
+00:07:49.852 [debug] handled notification client -> server textDocument/didChange in 176µs
+
+00:07:49.853 [debug] sent notification server -> client window/logMessage
+
+00:07:49.854 [info] expanding on the runtime node
+
+00:07:49.855 id=552 [debug] handled request client -> server textDocument/completion in 2ms
+
+00:07:49.866 id=553 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:07:50.941 [debug] handled notification client -> server textDocument/didChange in 233µs
+
+00:07:50.941 id=554 [debug] handled request client -> server textDocument/codeAction in 194µs
+
+00:07:50.941 id=555 [debug] handled request client -> server textDocument/documentSymbol in 366µs
+
+00:07:51.041 id=556 [debug] handled request client -> server textDocument/documentSymbol in 310µs
+
+00:07:51.711 id=557 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:07:51.977 [debug] handled notification client -> server textDocument/didChange in 121µs
+
+00:07:51.977 [debug] sent notification server -> client window/logMessage
+
+00:07:51.977 [info] expanding on the runtime node
+
+00:07:51.979 id=558 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:52.223 id=559 [debug] handled request client -> server textDocument/codeAction in 324µs
+
+00:07:52.225 [debug] sent notification server -> client window/logMessage
+
+00:07:52.225 id=560 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:07:52.319 [debug] sent notification server -> client window/logMessage
+
+00:07:52.320 id=561 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:52.521 [debug] handled notification client -> server textDocument/didChange in 104µs
+
+00:07:52.522 id=562 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:07:52.687 [debug] handled notification client -> server textDocument/didChange in 84µs
+
+00:07:52.687 [debug] sent notification server -> client window/logMessage
+
+00:07:52.688 [info] expanding on the runtime node
+
+00:07:52.689 id=563 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:52.834 [debug] handled notification client -> server textDocument/didChange in 860µs
+
+00:07:52.834 [debug] sent notification server -> client window/logMessage
+
+00:07:52.834 [info] expanding on the runtime node
+
+00:07:52.835 id=564 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:07:53.287 [debug] handled notification client -> server textDocument/didChange in 339µs
+
+00:07:53.289 [debug] sent notification server -> client window/logMessage
+
+00:07:53.289 id=565 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:53.389 [debug] sent notification server -> client window/logMessage
+
+00:07:53.390 id=566 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:53.906 [debug] handled notification client -> server textDocument/didChange in 312µs
+
+00:07:53.907 id=567 [debug] handled request client -> server textDocument/codeAction in 215µs
+
+00:07:53.907 [debug] sent notification server -> client window/logMessage
+
+00:07:53.907 id=568 [debug] handled request client -> server textDocument/documentSymbol in 675µs
+
+00:07:54.005 [debug] sent notification server -> client window/logMessage
+
+00:07:54.006 id=569 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:07:56.271 id=570 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:07:57.216 id=571 [debug] handled request client -> server textDocument/codeAction in 372µs
+
+00:07:58.173 [debug] handled notification client -> server textDocument/didChange in 216µs
+
+00:07:58.185 [debug] sent notification server -> client window/logMessage
+
+00:07:58.185 id=572 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:07:58.277 [debug] sent notification server -> client window/logMessage
+
+00:07:58.277 id=573 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:00.603 [debug] handled notification client -> server textDocument/didChange in 338µs
+
+00:08:00.604 [debug] sent notification server -> client window/logMessage
+
+00:08:00.604 id=574 [debug] handled request client -> server textDocument/documentSymbol in 902µs
+
+00:08:00.706 [debug] sent notification server -> client window/logMessage
+
+00:08:00.706 id=575 [debug] handled request client -> server textDocument/documentSymbol in 3ms
+
+00:08:01.869 id=576 [debug] handled request client -> server textDocument/hover in 814µs
+
+00:08:02.059 id=577 [debug] handled request client -> server textDocument/hover in 937µs
+
+00:08:02.234 id=578 [debug] handled request client -> server textDocument/hover in 888µs
+
+00:08:02.562 id=579 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:08:03.175 [debug] handled notification client -> server textDocument/didChange in 112µs
+
+00:08:03.175 [debug] sent notification server -> client window/logMessage
+
+00:08:03.175 [info] expanding on the runtime node
+
+00:08:03.177 id=580 [debug] handled request client -> server textDocument/completion in 2ms
+
+00:08:03.850 [debug] handled notification client -> server textDocument/didChange in 281µs
+
+00:08:03.851 id=581 [debug] handled request client -> server textDocument/codeAction in 285µs
+
+00:08:03.852 [debug] sent notification server -> client window/logMessage
+
+00:08:03.852 id=582 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:03.950 [debug] sent notification server -> client window/logMessage
+
+00:08:03.951 id=583 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:08:05.532 [debug] handled notification client -> server textDocument/didChange in 230µs
+
+00:08:05.532 id=584 [debug] handled request client -> server textDocument/codeAction in 240µs
+
+00:08:05.534 [debug] sent notification server -> client window/logMessage
+
+00:08:05.534 id=585 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:05.633 [debug] sent notification server -> client window/logMessage
+
+00:08:05.633 id=586 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:07.874 [debug] handled notification client -> server textDocument/didChange in 313µs
+
+00:08:07.875 [debug] sent notification server -> client window/logMessage
+
+00:08:07.875 id=587 [debug] handled request client -> server textDocument/documentSymbol in 990µs
+
+00:08:07.971 [debug] sent notification server -> client window/logMessage
+
+00:08:07.971 id=588 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:08.938 [debug] handled notification client -> server textDocument/didChange in 266µs
+
+00:08:08.938 id=589 [debug] handled request client -> server textDocument/codeAction in 169µs
+
+00:08:08.939 [debug] sent notification server -> client window/logMessage
+
+00:08:08.939 id=590 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:09.035 [debug] sent notification server -> client window/logMessage
+
+00:08:09.035 id=591 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:09.571 [debug] handled notification client -> server textDocument/didChange in 149µs
+
+00:08:09.572 [debug] sent notification server -> client window/logMessage
+
+00:08:09.572 id=592 [debug] handled request client -> server textDocument/documentSymbol in 603µs
+
+00:08:09.673 [debug] sent notification server -> client window/logMessage
+
+00:08:09.673 id=593 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:08:10.131 [debug] handled notification client -> server textDocument/didChange in 193µs
+
+00:08:10.132 [debug] sent notification server -> client window/logMessage
+
+00:08:10.132 [info] expanding on the runtime node
+
+00:08:10.135 id=594 [debug] handled request client -> server textDocument/completion in 3ms
+
+00:08:10.141 id=595 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:08:10.376 id=596 [debug] handled request client -> server textDocument/codeAction in 460µs
+
+00:08:10.377 [debug] sent notification server -> client window/logMessage
+
+00:08:10.377 id=597 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:10.469 [debug] sent notification server -> client window/logMessage
+
+00:08:10.469 id=598 [debug] handled request client -> server textDocument/documentSymbol in 942µs
+
+00:08:11.735 [debug] handled notification client -> server textDocument/didChange in 916µs
+
+00:08:11.735 id=599 [debug] handled request client -> server textDocument/codeAction in 146µs
+
+00:08:11.735 id=600 [debug] handled request client -> server textDocument/documentSymbol in 292µs
+
+00:08:11.834 id=601 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:11.990 id=602 [debug] handled request client -> server textDocument/definition in 672µs
+
+00:08:12.141 id=603 [debug] handled request client -> server textDocument/definition in 828µs
+
+00:08:12.190 [debug] handled notification client -> server textDocument/didChange in 134µs
+
+00:08:12.191 id=604 [debug] handled request client -> server textDocument/definition in 569µs
+
+00:08:12.199 id=3 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:12.199 [debug] handled notification client -> server textDocument/didSave in 612µs
+
+00:08:12.199 [debug] sent notification server -> client $/progress
+
+00:08:12.284 [debug] sent notification server -> client window/logMessage
+
+00:08:12.284 [info] Compiling 1 file (.ex)
+
+
+00:08:12.285 id=35 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:12.285 [debug] sent notification server -> client $/progress
+
+00:08:12.295 [debug] sent notification server -> client window/logMessage
+
+00:08:12.295 [info]     warning: variable "url" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    \x{2502}
+  4 \x{2502}   def post_request(url, params) when is_map(params) do
+    \x{2502}                    ~~~
+    \x{2502}
+    \x{2514}\x{2500} (mpesa_elixir 0.1.1) lib/mpesa_elixir.ex:4:20: MpesaElixir.post_request/2
+
+
+
+00:08:12.300 [debug] sent notification server -> client window/logMessage
+
+00:08:12.300 [debug] sent notification server -> client $/progress
+
+00:08:12.300 [info] Compiled mpesa_elixir!
+
+00:08:12.300 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:12.300 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:12.330 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:12.393 [debug] sent notification server -> client $/progress
+
+00:08:12.456 id=605 [debug] handled request client -> server textDocument/documentSymbol in 219µs
+
+00:08:12.536 id=606 [debug] handled request client -> server textDocument/documentSymbol in 236µs
+
+00:08:12.546 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 175µs
+
+00:08:12.789 id=607 [debug] handled request client -> server textDocument/codeAction in 660µs
+
+00:08:13.235 [debug] handled notification client -> server textDocument/didChange in 260µs
+
+00:08:13.239 id=608 [debug] handled request client -> server textDocument/documentSymbol in 624µs
+
+00:08:13.334 id=609 [debug] handled request client -> server textDocument/documentSymbol in 455µs
+
+00:08:13.832 [debug] handled notification client -> server textDocument/didChange in 782µs
+
+00:08:13.834 id=610 [debug] handled request client -> server textDocument/documentSymbol in 347µs
+
+00:08:13.934 id=611 [debug] handled request client -> server textDocument/documentSymbol in 307µs
+
+00:08:13.966 [debug] handled notification client -> server textDocument/didChange in 82µs
+
+00:08:13.966 [debug] sent notification server -> client window/logMessage
+
+00:08:13.966 [info] expanding on the runtime node
+
+00:08:13.967 id=612 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:08:14.078 [debug] handled notification client -> server textDocument/didChange in 96µs
+
+00:08:14.080 id=613 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:08:14.874 [debug] handled notification client -> server textDocument/didChange in 348µs
+
+00:08:14.874 id=614 [debug] handled request client -> server textDocument/documentSymbol in 613µs
+
+00:08:14.971 id=615 [debug] handled request client -> server textDocument/documentSymbol in 258µs
+
+00:08:16.415 id=616 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:08:17.276 id=617 [debug] handled request client -> server textDocument/codeAction in 459µs
+
+00:08:17.781 id=618 [debug] handled request client -> server textDocument/definition in 1ms
+
+00:08:17.788 id=619 [debug] handled request client -> server textDocument/definition in 939µs
+
+00:08:20.839 [debug] handled notification client -> server textDocument/didChange in 219µs
+
+00:08:20.848 id=620 [debug] handled request client -> server textDocument/codeAction in 6ms
+
+00:08:20.848 id=621 [debug] handled request client -> server textDocument/documentSymbol in 309µs
+
+00:08:20.941 id=622 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:21.000 [debug] handled notification client -> server textDocument/didChange in 98µs
+
+00:08:21.000 [debug] sent notification server -> client window/logMessage
+
+00:08:21.000 [info] expanding on the runtime node
+
+00:08:21.013 id=623 [debug] handled request client -> server textDocument/completion in 13ms
+
+00:08:21.018 id=624 [debug] handled request client -> server completionItem/resolve in 747µs
+
+00:08:21.254 id=625 [debug] handled request client -> server textDocument/codeAction in 465µs
+
+00:08:21.254 id=626 [debug] handled request client -> server textDocument/documentSymbol in 338µs
+
+00:08:21.363 id=627 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:22.467 [debug] handled notification client -> server textDocument/didChange in 206µs
+
+00:08:22.467 id=628 [debug] handled request client -> server textDocument/codeAction in 254µs
+
+00:08:22.468 id=629 [debug] handled request client -> server textDocument/documentSymbol in 357µs
+
+00:08:22.568 id=630 [debug] handled request client -> server textDocument/documentSymbol in 482µs
+
+00:08:22.950 [debug] handled notification client -> server textDocument/didChange in 147µs
+
+00:08:22.950 id=580 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:22.951 [debug] handled notification client -> server textDocument/didSave in 594µs
+
+00:08:22.951 [debug] sent notification server -> client $/progress
+
+00:08:23.002 [debug] sent notification server -> client window/logMessage
+
+00:08:23.002 [info] Compiling 1 file (.ex)
+
+
+00:08:23.004 id=67 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:23.004 [debug] sent notification server -> client $/progress
+
+00:08:23.005 [debug] sent notification server -> client window/logMessage
+
+00:08:23.005 [info]     warning: variable "url" is unused (if the variable is not meant to be used, prefix it with an underscore)
+    \x{2502}
+  6 \x{2502}   def post_request(url, params) when is_map(params) do
+    \x{2502}                    ~~~
+    \x{2502}
+    \x{2514}\x{2500} (mpesa_elixir 0.1.1) lib/mpesa_elixir.ex:6:20: MpesaElixir.post_request/2
+
+
+
+00:08:23.007 [debug] sent notification server -> client window/logMessage
+
+00:08:23.007 [info]     warning: unused alias API
+    \x{2502}
+  4 \x{2502}   alias MpesaElixir.API
+    \x{2502}   ~
+    \x{2502}
+    \x{2514}\x{2500} lib/mpesa_elixir.ex:4:3
+
+
+
+00:08:23.012 [debug] sent notification server -> client $/progress
+
+00:08:23.012 [debug] sent notification server -> client window/logMessage
+
+00:08:23.012 [info] Compiled mpesa_elixir!
+
+00:08:23.012 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:23.012 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:23.040 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:23.108 [debug] sent notification server -> client $/progress
+
+00:08:23.206 id=631 [debug] handled request client -> server textDocument/documentSymbol in 370µs
+
+00:08:23.278 id=632 [debug] handled request client -> server textDocument/documentSymbol in 244µs
+
+00:08:23.280 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 153µs
+
+00:08:23.294 id=633 [debug] handled request client -> server textDocument/codeAction in 133µs
+
+00:08:23.446 id=634 [debug] handled request client -> server textDocument/hover in 797µs
+
+00:08:24.073 id=635 [debug] handled request client -> server textDocument/codeAction in 365µs
+
+00:08:24.310 id=636 [debug] handled request client -> server textDocument/definition in 20ms
+
+00:08:24.329 [debug] handled notification client -> server textDocument/didOpen in 2ms
+
+00:08:24.329 [debug] handled notification client -> server textDocument/didClose in 78µs
+
+00:08:25.878 id=637 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:08:26.262 [debug] handled notification client -> server textDocument/didChange in 219µs
+
+00:08:26.266 id=638 [debug] handled request client -> server textDocument/documentSymbol in 586µs
+
+00:08:26.366 id=639 [debug] handled request client -> server textDocument/documentSymbol in 358µs
+
+00:08:27.270 [debug] handled notification client -> server textDocument/didChange in 201µs
+
+00:08:27.270 id=640 [debug] handled request client -> server textDocument/codeAction in 160µs
+
+00:08:27.271 id=641 [debug] handled request client -> server textDocument/documentSymbol in 413µs
+
+00:08:27.371 id=642 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:29.897 [debug] handled notification client -> server textDocument/didChange in 245µs
+
+00:08:29.898 [debug] sent notification server -> client window/logMessage
+
+00:08:29.898 [info] expanding on the runtime node
+
+00:08:29.917 id=643 [debug] handled request client -> server textDocument/completion in 19ms
+
+00:08:29.923 id=644 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:08:30.150 id=645 [debug] handled request client -> server textDocument/codeAction in 449µs
+
+00:08:30.151 [debug] sent notification server -> client window/logMessage
+
+00:08:30.151 id=646 [debug] handled request client -> server textDocument/documentSymbol in 906µs
+
+00:08:30.250 [debug] sent notification server -> client window/logMessage
+
+00:08:30.250 id=647 [debug] handled request client -> server textDocument/documentSymbol in 3ms
+
+00:08:30.578 [debug] handled notification client -> server textDocument/didChange in 355µs
+
+00:08:30.578 id=648 [debug] handled request client -> server textDocument/codeAction in 315µs
+
+00:08:30.579 id=649 [debug] handled request client -> server textDocument/documentSymbol in 593µs
+
+00:08:30.678 id=650 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:31.032 [debug] handled notification client -> server textDocument/didChange in 86µs
+
+00:08:31.032 [debug] sent notification server -> client window/logMessage
+
+00:08:31.032 [info] expanding on the runtime node
+
+00:08:31.033 id=651 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:08:31.384 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+00:08:31.384 id=652 [debug] handled request client -> server textDocument/codeAction in 251µs
+
+00:08:31.388 id=653 [debug] handled request client -> server textDocument/documentSymbol in 4ms
+
+00:08:31.481 [debug] handled notification client -> server textDocument/didChange in 108µs
+
+00:08:31.482 id=654 [debug] handled request client -> server textDocument/documentSymbol in 730µs
+
+00:08:31.704 id=655 [debug] handled request client -> server textDocument/codeAction in 360µs
+
+00:08:31.705 id=656 [debug] handled request client -> server textDocument/documentSymbol in 543µs
+
+00:08:31.807 id=657 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:08:33.601 id=658 [debug] handled request client -> server completionItem/resolve in 1ms
+
+00:08:33.862 [debug] handled notification client -> server textDocument/didChange in 378µs
+
+00:08:33.863 id=659 [debug] handled request client -> server textDocument/codeAction in 372µs
+
+00:08:33.864 id=660 [debug] handled request client -> server textDocument/documentSymbol in 565µs
+
+00:08:33.962 id=661 [debug] handled request client -> server textDocument/documentSymbol in 457µs
+
+00:08:35.011 [debug] handled notification client -> server textDocument/didChange in 336µs
+
+00:08:35.013 id=662 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:08:35.013 id=663 [debug] handled request client -> server textDocument/documentSymbol in 566µs
+
+00:08:35.111 id=664 [debug] handled request client -> server textDocument/documentSymbol in 656µs
+
+00:08:37.410 id=1922 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:37.410 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:08:37.411 [debug] sent notification server -> client $/progress
+
+00:08:37.456 [debug] sent notification server -> client window/logMessage
+
+00:08:37.456 [info] Compiling 1 file (.ex)
+
+
+00:08:37.457 id=1954 [debug] sent request server -> client window/workDoneProgress/create
+
+00:08:37.458 [debug] sent notification server -> client $/progress
+
+00:08:37.465 [debug] sent notification server -> client window/logMessage
+
+00:08:37.465 [info]     warning: MpesaElixir.API.request/3 is undefined or private. Did you mean:
+
+          * request/1
+          * request/2
+
+    \x{2502}
+  7 \x{2502}     API.request(:post, url, params)
+    \x{2502}         ~
+    \x{2502}
+    \x{2514}\x{2500} (mpesa_elixir 0.1.1) lib/mpesa_elixir.ex:7:9: MpesaElixir.post_request/2
+
+
+
+00:08:37.468 [debug] sent notification server -> client $/progress
+
+00:08:37.468 [debug] sent notification server -> client window/logMessage
+
+00:08:37.468 [info] Compiled mpesa_elixir!
+
+00:08:37.468 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:37.468 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:37.494 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:08:37.562 [debug] sent notification server -> client $/progress
+
+00:08:37.739 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 183µs
+
+00:08:37.748 id=665 [debug] handled request client -> server textDocument/codeAction in 131µs
+
+00:08:39.756 id=666 [debug] handled request client -> server textDocument/codeAction in 321µs
+
+00:09:06.069 id=667 [debug] handled request client -> server textDocument/codeAction in 387µs
+
+00:09:06.594 id=668 [debug] handled request client -> server textDocument/hover in 987µs
+
+00:09:09.571 id=669 [debug] handled request client -> server textDocument/codeAction in 353µs
+
+00:09:11.796 id=670 [debug] handled request client -> server textDocument/hover in 901µs
+
+00:09:12.577 id=671 [debug] handled request client -> server textDocument/hover in 5ms
+
+00:09:12.724 id=672 [debug] handled request client -> server textDocument/codeAction in 596µs
+
+00:09:16.393 id=673 [debug] handled request client -> server textDocument/codeAction in 463µs
+
+00:09:17.551 id=674 [debug] handled request client -> server textDocument/definition in 10ms
+
+00:09:17.567 [debug] handled notification client -> server textDocument/didOpen in 1ms
+
+00:09:17.567 [debug] handled notification client -> server textDocument/didClose in 34µs
+
+00:09:17.887 id=675 [debug] handled request client -> server textDocument/definition in 4ms
+
+00:09:17.912 [debug] handled notification client -> server textDocument/didOpen in 268µs
+
+00:09:17.913 id=676 [debug] handled request client -> server textDocument/codeAction in 174µs
+
+00:09:17.915 id=677 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:09:18.213 id=678 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:09:20.903 id=679 [debug] handled request client -> server textDocument/codeAction in 350µs
+
+00:09:25.324 id=680 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:09:26.713 id=681 [debug] handled request client -> server textDocument/codeAction in 334µs
+
+00:09:29.621 id=682 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:09:30.314 id=683 [debug] handled request client -> server textDocument/codeAction in 343µs
+
+00:09:40.832 id=684 [debug] handled request client -> server textDocument/hover in 968µs
+
+00:09:40.838 [debug] handled notification client -> server $/cancelRequest in 5ms
+
+00:09:42.165 id=685 [debug] handled request client -> server textDocument/codeAction in 369µs
+
+00:09:43.943 id=1986 [debug] sent request server -> client window/workDoneProgress/create
+
+00:09:43.943 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:09:43.943 [debug] sent notification server -> client $/progress
+
+00:09:43.988 [debug] sent notification server -> client window/logMessage
+
+00:09:43.988 [info]     warning: MpesaElixir.API.request/3 is undefined or private. Did you mean:
+
+          * request/1
+          * request/2
+
+    \x{2502}
+  7 \x{2502}     API.request(:post, url, params)
+    \x{2502}         ~
+    \x{2502}
+    \x{2514}\x{2500} (mpesa_elixir 0.1.1) lib/mpesa_elixir.ex:7:9: MpesaElixir.post_request/2
+
+
+
+00:09:43.989 [debug] sent notification server -> client window/logMessage
+
+00:09:43.989 [debug] sent notification server -> client $/progress
+
+00:09:43.989 [info] Compiled mpesa_elixir!
+
+00:09:43.989 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:09:43.989 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:09:44.014 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:09:45.528 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 1ms
+
+00:10:48.231 id=686 [debug] handled request client -> server textDocument/codeAction in 166µs
+
+00:10:48.484 id=687 [debug] handled request client -> server textDocument/codeAction in 809µs
+
+00:10:48.531 id=688 [debug] handled request client -> server textDocument/documentSymbol in 251µs
+
+00:10:50.396 id=689 [debug] handled request client -> server textDocument/codeAction in 461µs
+
+00:10:51.453 id=690 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:10:51.597 id=691 [debug] handled request client -> server textDocument/codeAction in 166µs
+
+00:10:56.204 id=692 [debug] handled request client -> server textDocument/codeAction in 168µs
+
+00:10:56.458 id=693 [debug] handled request client -> server textDocument/codeAction in 907µs
+
+00:10:56.505 id=694 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:10:57.919 id=695 [debug] handled request client -> server textDocument/codeAction in 370µs
+
+00:11:05.480 id=696 [debug] handled request client -> server textDocument/codeAction in 179µs
+
+00:11:05.734 id=697 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:05.778 id=698 [debug] handled request client -> server textDocument/documentSymbol in 383µs
+
+00:11:07.717 id=699 [debug] handled request client -> server textDocument/hover in 958µs
+
+00:11:08.440 id=700 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:11:08.933 id=701 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:11:09.828 [debug] handled notification client -> server textDocument/didChange in 487µs
+
+00:11:09.829 id=702 [debug] handled request client -> server textDocument/codeAction in 339µs
+
+00:11:09.829 id=703 [debug] handled request client -> server textDocument/documentSymbol in 537µs
+
+00:11:09.928 id=704 [debug] handled request client -> server textDocument/documentSymbol in 611µs
+
+00:11:10.209 [debug] handled notification client -> server textDocument/didChange in 290µs
+
+00:11:10.211 id=705 [debug] handled request client -> server textDocument/codeAction in 279µs
+
+00:11:10.214 id=706 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:10.309 id=707 [debug] handled request client -> server textDocument/documentSymbol in 580µs
+
+00:11:11.614 id=708 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:11:14.087 id=709 [debug] handled request client -> server textDocument/hover in 4ms
+
+00:11:14.237 id=710 [debug] handled request client -> server textDocument/codeAction in 405µs
+
+00:11:15.538 id=711 [debug] handled request client -> server textDocument/hover in 470µs
+
+00:11:15.855 id=712 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:11:16.963 id=713 [debug] handled request client -> server textDocument/codeAction in 189µs
+
+00:11:17.325 [debug] handled notification client -> server textDocument/didChange in 164µs
+
+00:11:17.325 [debug] sent notification server -> client window/logMessage
+
+00:11:17.325 [info] expanding on the runtime node
+
+00:11:17.328 id=714 [debug] handled request client -> server textDocument/completion in 2ms
+
+00:11:17.564 id=715 [debug] handled request client -> server textDocument/codeAction in 511µs
+
+00:11:17.565 id=716 [debug] handled request client -> server textDocument/documentSymbol in 621µs
+
+00:11:17.661 id=717 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:17.943 [debug] handled notification client -> server textDocument/didChange in 280µs
+
+00:11:17.943 id=718 [debug] handled request client -> server textDocument/codeAction in 383µs
+
+00:11:17.944 [debug] sent notification server -> client window/logMessage
+
+00:11:17.944 id=719 [debug] handled request client -> server textDocument/documentSymbol in 726µs
+
+00:11:18.043 [debug] sent notification server -> client window/logMessage
+
+00:11:18.043 id=720 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:20.431 [debug] handled notification client -> server textDocument/didChange in 331µs
+
+00:11:20.432 id=721 [debug] handled request client -> server textDocument/codeAction in 356µs
+
+00:11:20.434 id=722 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:20.531 id=723 [debug] handled request client -> server textDocument/documentSymbol in 714µs
+
+00:11:21.899 id=724 [debug] handled request client -> server textDocument/codeAction in 162µs
+
+00:11:22.152 id=725 [debug] handled request client -> server textDocument/codeAction in 174µs
+
+00:11:22.201 id=726 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:22.908 id=727 [debug] handled request client -> server textDocument/codeAction in 232µs
+
+00:11:23.162 id=728 [debug] handled request client -> server textDocument/codeAction in 157µs
+
+00:11:23.208 id=729 [debug] handled request client -> server textDocument/documentSymbol in 240µs
+
+00:11:24.992 [debug] handled notification client -> server textDocument/didOpen in 838µs
+
+00:11:24.993 id=730 [debug] handled request client -> server textDocument/codeAction in 145µs
+
+00:11:24.994 id=731 [debug] handled request client -> server textDocument/documentSymbol in 916µs
+
+00:11:25.243 id=732 [debug] handled request client -> server textDocument/codeAction in 106µs
+
+00:11:25.291 id=733 [debug] handled request client -> server textDocument/documentSymbol in 304µs
+
+00:11:25.621 id=734 [debug] handled request client -> server textDocument/hover in 351µs
+
+00:11:28.359 id=735 [debug] handled request client -> server textDocument/codeAction in 155µs
+
+00:11:29.047 id=736 [debug] handled request client -> server textDocument/hover in 752µs
+
+00:11:29.403 id=737 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:11:33.250 id=738 [debug] handled request client -> server textDocument/codeAction in 178µs
+
+00:11:33.504 id=739 [debug] handled request client -> server textDocument/codeAction in 196µs
+
+00:11:33.549 id=740 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:34.790 id=741 [debug] handled request client -> server textDocument/codeAction in 146µs
+
+00:11:35.041 id=742 [debug] handled request client -> server textDocument/codeAction in 160µs
+
+00:11:35.089 id=743 [debug] handled request client -> server textDocument/documentSymbol in 435µs
+
+00:11:36.609 id=744 [debug] handled request client -> server textDocument/codeAction in 260µs
+
+00:11:36.861 id=745 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:36.906 id=746 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:37.782 id=747 [debug] handled request client -> server textDocument/codeAction in 170µs
+
+00:11:38.034 id=748 [debug] handled request client -> server textDocument/codeAction in 990µs
+
+00:11:38.080 id=749 [debug] handled request client -> server textDocument/documentSymbol in 293µs
+
+00:11:38.965 id=750 [debug] handled request client -> server textDocument/hover in 430µs
+
+00:11:39.113 id=751 [debug] handled request client -> server textDocument/codeAction in 246µs
+
+00:11:39.888 id=752 [debug] handled request client -> server textDocument/hover in 3ms
+
+00:11:40.427 id=753 [debug] handled request client -> server textDocument/codeAction in 504µs
+
+00:11:41.529 [debug] handled notification client -> server textDocument/didChange in 307µs
+
+00:11:41.530 id=754 [debug] handled request client -> server textDocument/codeAction in 430µs
+
+00:11:41.531 [debug] sent notification server -> client window/logMessage
+
+00:11:41.531 id=755 [debug] handled request client -> server textDocument/documentSymbol in 942µs
+
+00:11:41.631 [debug] sent notification server -> client window/logMessage
+
+00:11:41.631 id=756 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:45.151 id=757 [debug] handled request client -> server textDocument/codeAction in 244µs
+
+00:11:45.407 id=758 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:45.450 id=759 [debug] handled request client -> server textDocument/documentSymbol in 431µs
+
+00:11:46.628 id=760 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:11:48.141 id=761 [debug] handled request client -> server textDocument/codeAction in 512µs
+
+00:11:48.800 id=762 [debug] handled request client -> server textDocument/definition in 6ms
+
+00:11:48.811 [debug] handled notification client -> server textDocument/didOpen in 1ms
+
+00:11:48.812 [debug] handled notification client -> server textDocument/didClose in 584µs
+
+00:11:48.839 id=763 [debug] handled request client -> server textDocument/definition in 663µs
+
+00:11:48.848 id=764 [debug] handled request client -> server textDocument/definition in 579µs
+
+00:11:48.857 id=765 [debug] handled request client -> server textDocument/definition in 641µs
+
+00:11:48.891 id=766 [debug] handled request client -> server textDocument/definition in 1ms
+
+00:11:48.903 id=767 [debug] handled request client -> server textDocument/definition in 4ms
+
+00:11:48.908 id=768 [debug] handled request client -> server textDocument/definition in 562µs
+
+00:11:48.950 id=769 [debug] handled request client -> server textDocument/definition in 1ms
+
+00:11:48.957 id=770 [debug] handled request client -> server textDocument/definition in 589µs
+
+00:11:48.965 id=771 [debug] handled request client -> server textDocument/definition in 509µs
+
+00:11:49.495 id=772 [debug] handled request client -> server textDocument/codeAction in 123µs
+
+00:11:49.748 id=773 [debug] handled request client -> server textDocument/codeAction in 782µs
+
+00:11:49.794 [debug] sent notification server -> client window/logMessage
+
+00:11:49.795 id=774 [debug] handled request client -> server textDocument/documentSymbol in 430µs
+
+00:11:50.854 id=775 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:11:50.998 id=776 [debug] handled request client -> server textDocument/codeAction in 242µs
+
+00:11:51.273 id=777 [debug] handled request client -> server textDocument/codeAction in 419µs
+
+00:11:51.647 [debug] handled notification client -> server textDocument/didChange in 279µs
+
+00:11:51.651 [debug] sent notification server -> client window/logMessage
+
+00:11:51.652 id=778 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:51.742 [debug] sent notification server -> client window/logMessage
+
+00:11:51.742 id=779 [debug] handled request client -> server textDocument/documentSymbol in 670µs
+
+00:11:52.341 [debug] handled notification client -> server textDocument/didChange in 213µs
+
+00:11:52.342 id=780 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:52.343 [debug] sent notification server -> client window/logMessage
+
+00:11:52.343 id=781 [debug] handled request client -> server textDocument/documentSymbol in 652µs
+
+00:11:52.442 [debug] sent notification server -> client window/logMessage
+
+00:11:52.442 id=782 [debug] handled request client -> server textDocument/documentSymbol in 625µs
+
+00:11:52.826 id=783 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:11:53.363 id=784 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:11:54.137 id=785 [debug] handled request client -> server textDocument/codeAction in 493µs
+
+00:11:54.825 [debug] handled notification client -> server textDocument/didChange in 241µs
+
+00:11:54.827 id=786 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:54.828 [debug] sent notification server -> client window/logMessage
+
+00:11:54.828 id=787 [debug] handled request client -> server textDocument/documentSymbol in 683µs
+
+00:11:54.923 [debug] sent notification server -> client window/logMessage
+
+00:11:54.923 id=788 [debug] handled request client -> server textDocument/documentSymbol in 778µs
+
+00:11:55.907 id=789 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:11:56.243 [debug] handled notification client -> server textDocument/didChange in 253µs
+
+00:11:56.243 [debug] sent notification server -> client window/logMessage
+
+00:11:56.243 id=790 [debug] handled request client -> server textDocument/documentSymbol in 596µs
+
+00:11:56.341 [debug] sent notification server -> client window/logMessage
+
+00:11:56.341 id=791 [debug] handled request client -> server textDocument/documentSymbol in 3ms
+
+00:11:56.760 [debug] handled notification client -> server textDocument/didChange in 117µs
+
+00:11:56.761 id=792 [debug] handled request client -> server textDocument/definition in 816µs
+
+00:11:56.853 id=793 [debug] handled request client -> server textDocument/codeAction in 170µs
+
+00:11:56.854 [debug] sent notification server -> client window/logMessage
+
+00:11:56.854 id=794 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:56.950 [debug] sent notification server -> client window/logMessage
+
+00:11:56.950 id=795 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:57.737 id=796 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:11:58.013 id=797 [debug] handled request client -> server textDocument/codeAction in 319µs
+
+00:11:58.871 [debug] handled notification client -> server textDocument/didChange in 257µs
+
+00:11:58.871 id=798 [debug] handled request client -> server textDocument/codeAction in 236µs
+
+00:11:58.873 [debug] sent notification server -> client window/logMessage
+
+00:11:58.874 id=799 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:58.970 [debug] sent notification server -> client window/logMessage
+
+00:11:58.970 id=800 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:59.335 [debug] handled notification client -> server textDocument/didChange in 297µs
+
+00:11:59.337 id=801 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:11:59.337 [debug] sent notification server -> client window/logMessage
+
+00:11:59.337 id=802 [debug] handled request client -> server textDocument/documentSymbol in 820µs
+
+00:11:59.436 [debug] handled notification client -> server textDocument/didChange in 121µs
+
+00:11:59.438 [debug] sent notification server -> client window/logMessage
+
+00:11:59.438 id=803 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:11:59.687 id=804 [debug] handled request client -> server textDocument/codeAction in 330µs
+
+00:11:59.690 [debug] sent notification server -> client window/logMessage
+
+00:11:59.690 id=805 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:11:59.784 [debug] sent notification server -> client window/logMessage
+
+00:11:59.785 id=806 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:12:01.930 id=807 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:12:06.443 id=808 [debug] handled request client -> server textDocument/hover in 961µs
+
+00:12:06.654 id=809 [debug] handled request client -> server textDocument/hover in 922µs
+
+00:12:17.176 id=810 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:12:17.678 id=811 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:12:18.265 [debug] handled notification client -> server textDocument/didChange in 295µs
+
+00:12:18.265 id=812 [debug] handled request client -> server textDocument/codeAction in 269µs
+
+00:12:18.267 id=813 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:12:18.371 id=814 [debug] handled request client -> server textDocument/documentSymbol in 643µs
+
+00:12:20.195 [debug] handled notification client -> server textDocument/didChange in 372µs
+
+00:12:20.196 id=815 [debug] handled request client -> server textDocument/codeAction in 269µs
+
+00:12:20.196 id=816 [debug] handled request client -> server textDocument/documentSymbol in 537µs
+
+00:12:20.294 id=817 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:12:21.516 id=818 [debug] handled request client -> server textDocument/codeAction in 280µs
+
+00:12:22.034 id=2018 [debug] sent request server -> client window/workDoneProgress/create
+
+00:12:22.034 [debug] handled notification client -> server textDocument/didSave in 964µs
+
+00:12:22.035 [debug] sent notification server -> client $/progress
+
+00:12:22.086 [debug] sent notification server -> client window/logMessage
+
+00:12:22.086 [info] Compiling 1 file (.ex)
+
+
+00:12:22.088 id=99 [debug] sent request server -> client window/workDoneProgress/create
+
+00:12:22.088 [debug] sent notification server -> client $/progress
+
+00:12:22.097 [debug] sent notification server -> client $/progress
+
+00:12:22.097 [debug] sent notification server -> client window/logMessage
+
+00:12:22.097 [info] Compiled mpesa_elixir!
+
+00:12:22.097 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:22.097 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:22.124 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:22.196 [debug] sent notification server -> client $/progress
+
+00:12:22.352 id=819 [debug] handled request client -> server textDocument/codeAction in 860µs
+
+00:12:22.380 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 261µs
+
+00:12:23.429 id=820 [debug] handled request client -> server textDocument/codeAction in 200µs
+
+00:12:23.685 id=821 [debug] handled request client -> server textDocument/codeAction in 146µs
+
+00:12:23.729 id=822 [debug] handled request client -> server textDocument/documentSymbol in 419µs
+
+00:12:24.737 id=2050 [debug] sent request server -> client window/workDoneProgress/create
+
+00:12:24.737 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:12:24.737 [debug] sent notification server -> client $/progress
+
+00:12:24.782 [debug] sent notification server -> client $/progress
+
+00:12:24.782 [debug] sent notification server -> client window/logMessage
+
+00:12:24.782 [info] Compiled mpesa_elixir!
+
+00:12:24.782 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:24.782 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:24.808 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:12:25.070 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 143µs
+
+00:12:41.216 id=823 [debug] handled request client -> server textDocument/codeAction in 455µs
+
+00:12:42.219 id=824 [debug] handled request client -> server textDocument/codeAction in 147µs
+
+00:12:42.473 id=825 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:12:42.517 id=826 [debug] handled request client -> server textDocument/documentSymbol in 258µs
+
+00:12:43.841 id=827 [debug] handled request client -> server textDocument/codeAction in 380µs
+
+00:12:44.832 id=828 [debug] handled request client -> server textDocument/hover in 756µs
+
+00:12:45.455 id=829 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:12:47.907 id=830 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:12:48.791 id=831 [debug] handled request client -> server textDocument/codeAction in 296µs
+
+00:12:50.184 id=832 [debug] handled request client -> server textDocument/formatting in 3ms
+
+00:12:52.388 [debug] handled notification client -> server textDocument/didChange in 290µs
+
+00:12:52.391 id=833 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:12:52.492 id=834 [debug] handled request client -> server textDocument/documentSymbol in 748µs
+
+00:12:53.344 id=835 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:13:02.095 id=836 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:13:02.770 id=837 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:13:03.104 id=838 [debug] handled request client -> server textDocument/hover in 984µs
+
+00:13:04.145 id=839 [debug] handled request client -> server textDocument/codeAction in 283µs
+
+00:13:04.835 id=840 [debug] handled request client -> server textDocument/hover in 2ms
+
+00:13:05.330 id=841 [debug] handled request client -> server textDocument/definition in 1ms
+
+00:13:05.587 [debug] handled notification client -> server textDocument/didChange in 125µs
+
+00:13:05.588 id=2082 [debug] sent request server -> client window/workDoneProgress/create
+
+00:13:05.588 [debug] sent notification server -> client $/progress
+
+00:13:05.589 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:13:05.641 [debug] sent notification server -> client window/logMessage
+
+00:13:05.641 [info] Compiling 1 file (.ex)
+
+
+00:13:05.642 id=131 [debug] sent request server -> client window/workDoneProgress/create
+
+00:13:05.643 [debug] sent notification server -> client $/progress
+
+00:13:05.653 [debug] sent notification server -> client $/progress
+
+00:13:05.653 [debug] sent notification server -> client window/logMessage
+
+00:13:05.653 [info] Compiled mpesa_elixir!
+
+00:13:05.653 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:05.653 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:05.680 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:05.759 [debug] sent notification server -> client $/progress
+
+00:13:05.846 id=842 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:05.896 id=843 [debug] handled request client -> server textDocument/codeAction in 177µs
+
+00:13:05.923 id=844 [debug] handled request client -> server textDocument/documentSymbol in 244µs
+
+00:13:05.983 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 191µs
+
+00:13:09.263 id=845 [debug] handled request client -> server textDocument/hover in 569µs
+
+00:13:11.697 id=846 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:13:12.472 id=847 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:13:40.075 [debug] handled notification client -> server textDocument/didChange in 158µs
+
+00:13:40.080 id=848 [debug] handled request client -> server textDocument/codeAction in 142µs
+
+00:13:40.086 id=849 [debug] handled request client -> server textDocument/documentSymbol in 297µs
+
+00:13:40.180 id=850 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:40.333 id=851 [debug] handled request client -> server textDocument/codeAction in 287µs
+
+00:13:41.310 id=2114 [debug] sent request server -> client window/workDoneProgress/create
+
+00:13:41.310 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:13:41.311 [debug] sent notification server -> client $/progress
+
+00:13:41.359 [debug] sent notification server -> client window/logMessage
+
+00:13:41.359 [info] Compiling 1 file (.ex)
+
+
+00:13:41.360 id=163 [debug] sent request server -> client window/workDoneProgress/create
+
+00:13:41.361 [debug] sent notification server -> client $/progress
+
+00:13:41.369 [debug] sent notification server -> client $/progress
+
+00:13:41.369 [debug] sent notification server -> client window/logMessage
+
+00:13:41.369 [info] Compiled mpesa_elixir!
+
+00:13:41.369 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:41.369 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:41.395 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:41.469 [debug] sent notification server -> client $/progress
+
+00:13:41.660 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 188µs
+
+00:13:43.298 [debug] handled notification client -> server textDocument/didChange in 237µs
+
+00:13:43.304 id=852 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:43.406 id=853 [debug] handled request client -> server textDocument/documentSymbol in 510µs
+
+00:13:45.701 [debug] handled notification client -> server textDocument/didChange in 300µs
+
+00:13:45.703 id=854 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:13:45.704 [debug] sent notification server -> client window/logMessage
+
+00:13:45.704 id=855 [debug] handled request client -> server textDocument/documentSymbol in 916µs
+
+00:13:45.799 [debug] sent notification server -> client window/logMessage
+
+00:13:45.801 id=856 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:49.050 id=857 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:13:49.676 id=858 [debug] handled request client -> server textDocument/codeAction in 375µs
+
+00:13:50.139 [debug] handled notification client -> server textDocument/didChange in 312µs
+
+00:13:50.142 [debug] sent notification server -> client window/logMessage
+
+00:13:50.143 id=859 [debug] handled request client -> server textDocument/documentSymbol in 3ms
+
+00:13:50.237 [debug] sent notification server -> client window/logMessage
+
+00:13:50.237 id=860 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:52.427 [debug] handled notification client -> server textDocument/didChange in 156µs
+
+00:13:52.428 id=2146 [debug] sent request server -> client window/workDoneProgress/create
+
+00:13:52.428 [debug] handled notification client -> server textDocument/didSave in 695µs
+
+00:13:52.428 [debug] sent notification server -> client $/progress
+
+00:13:52.473 [debug] sent notification server -> client window/logMessage
+
+00:13:52.473 [info] Compiling 1 file (.ex)
+
+
+00:13:52.477 [debug] sent notification server -> client window/logMessage
+
+00:13:52.477 [info] 
+== Compilation error in file lib/mpesa_elixir.ex ==
+** (TokenMissingError) token missing on lib/mpesa_elixir.ex:14:4:
+    error: missing terminator: """ (for heredoc starting at line 6)
+    \x{2502}
+  6 \x{2502}   @doc """
+    \x{2502}        \x{2514} unclosed delimiter
+ ...
+ 14 \x{2502} end
+    \x{2502}    \x{2514} missing closing delimiter (expected """)
+    \x{2502}
+    \x{2514}\x{2500} lib/mpesa_elixir.ex:14:4
+    (elixir 1.17.3) lib/kernel/parallel_compiler.ex:429: anonymous fn/5 in Kernel.ParallelCompiler.spawn_workers/8
+
+
+00:13:52.480 [debug] sent notification server -> client $/progress
+
+00:13:52.480 [debug] sent notification server -> client window/logMessage
+
+00:13:52.480 [info] Compiled mpesa_elixir!
+
+00:13:52.480 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:52.480 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:52.508 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:13:52.684 [debug] sent notification server -> client window/logMessage
+
+00:13:52.684 id=861 [debug] handled request client -> server textDocument/documentSymbol in 425µs
+
+00:13:52.748 [debug] sent notification server -> client window/logMessage
+
+00:13:52.748 id=862 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:52.750 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 156µs
+
+00:13:54.892 id=863 [debug] handled request client -> server textDocument/codeAction in 257µs
+
+00:13:55.761 [debug] handled notification client -> server textDocument/didChange in 291µs
+
+00:13:55.774 [debug] sent notification server -> client window/logMessage
+
+00:13:55.774 id=864 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:55.862 [debug] sent notification server -> client window/logMessage
+
+00:13:55.862 id=865 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:56.159 [debug] handled notification client -> server textDocument/didChange in 383µs
+
+00:13:56.161 id=866 [debug] handled request client -> server textDocument/codeAction in 389µs
+
+00:13:56.164 [debug] sent notification server -> client window/logMessage
+
+00:13:56.164 id=867 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:56.267 [debug] handled notification client -> server textDocument/didChange in 182µs
+
+00:13:56.268 [debug] sent notification server -> client window/logMessage
+
+00:13:56.268 id=868 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:13:56.510 id=869 [debug] handled request client -> server textDocument/codeAction in 262µs
+
+00:13:56.510 [debug] sent notification server -> client window/logMessage
+
+00:13:56.510 id=870 [debug] handled request client -> server textDocument/documentSymbol in 479µs
+
+00:13:56.610 [debug] sent notification server -> client window/logMessage
+
+00:13:56.610 id=871 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:57.365 [debug] handled notification client -> server textDocument/didChange in 329µs
+
+00:13:57.367 id=872 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:13:57.368 [debug] sent notification server -> client window/logMessage
+
+00:13:57.368 id=873 [debug] handled request client -> server textDocument/documentSymbol in 773µs
+
+00:13:57.466 [debug] sent notification server -> client window/logMessage
+
+00:13:57.466 id=874 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:58.010 id=875 [debug] handled request client -> server textDocument/codeAction in 409µs
+
+00:13:58.496 [debug] handled notification client -> server textDocument/didChange in 300µs
+
+00:13:58.498 id=876 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:13:58.499 [debug] sent notification server -> client window/logMessage
+
+00:13:58.499 id=877 [debug] handled request client -> server textDocument/documentSymbol in 835µs
+
+00:13:58.591 [debug] sent notification server -> client window/logMessage
+
+00:13:58.591 id=878 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:13:59.104 [debug] handled notification client -> server textDocument/didChange in 273µs
+
+00:13:59.106 id=879 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:13:59.107 id=880 [debug] handled request client -> server textDocument/documentSymbol in 449µs
+
+00:13:59.202 id=881 [debug] handled request client -> server textDocument/documentSymbol in 470µs
+
+00:14:00.325 [debug] handled notification client -> server textDocument/didChange in 364µs
+
+00:14:00.328 id=882 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:14:00.328 [debug] sent notification server -> client window/logMessage
+
+00:14:00.330 id=883 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:00.422 [debug] sent notification server -> client window/logMessage
+
+00:14:00.422 id=884 [debug] handled request client -> server textDocument/documentSymbol in 910µs
+
+00:14:00.690 id=885 [debug] handled request client -> server textDocument/codeAction in 420µs
+
+00:14:01.214 [debug] handled notification client -> server textDocument/didChange in 1ms
+
+00:14:01.214 id=886 [debug] handled request client -> server textDocument/codeAction in 282µs
+
+00:14:01.216 id=887 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:01.310 id=888 [debug] handled request client -> server textDocument/documentSymbol in 385µs
+
+00:14:01.438 id=2178 [debug] sent request server -> client window/workDoneProgress/create
+
+00:14:01.438 [debug] handled notification client -> server textDocument/didSave in 799µs
+
+00:14:01.439 [debug] sent notification server -> client $/progress
+
+00:14:01.491 [debug] sent notification server -> client window/logMessage
+
+00:14:01.491 [info] Compiling 1 file (.ex)
+
+
+00:14:01.492 id=195 [debug] sent request server -> client window/workDoneProgress/create
+
+00:14:01.493 [debug] sent notification server -> client $/progress
+
+00:14:01.502 [debug] sent notification server -> client $/progress
+
+00:14:01.502 [debug] sent notification server -> client window/logMessage
+
+00:14:01.502 [info] Compiled mpesa_elixir!
+
+00:14:01.502 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:01.503 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:01.529 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:01.602 [debug] sent notification server -> client $/progress
+
+00:14:01.757 id=889 [debug] handled request client -> server textDocument/codeAction in 125µs
+
+00:14:01.762 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 184µs
+
+00:14:02.446 id=890 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:14:02.900 id=891 [debug] handled request client -> server textDocument/hover in 886µs
+
+00:14:04.327 [debug] handled notification client -> server textDocument/didChange in 239µs
+
+00:14:04.330 [debug] sent notification server -> client window/logMessage
+
+00:14:04.330 [info] expanding on the runtime node
+
+00:14:04.331 id=892 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:14:04.577 id=893 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:14:04.577 id=894 [debug] handled request client -> server textDocument/documentSymbol in 476µs
+
+00:14:04.831 [debug] handled notification client -> server textDocument/didChange in 165µs
+
+00:14:04.831 [debug] sent notification server -> client window/logMessage
+
+00:14:04.831 [info] expanding on the runtime node
+
+00:14:04.832 id=895 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:14:04.920 [debug] handled notification client -> server textDocument/didChange in 128µs
+
+00:14:04.920 [debug] sent notification server -> client window/logMessage
+
+00:14:04.920 [info] expanding on the runtime node
+
+00:14:04.921 id=896 [debug] handled request client -> server textDocument/completion in 568µs
+
+00:14:05.146 [debug] handled notification client -> server textDocument/didChange in 174µs
+
+00:14:05.147 [debug] sent notification server -> client window/logMessage
+
+00:14:05.147 [info] expanding on the runtime node
+
+00:14:05.148 id=897 [debug] handled request client -> server textDocument/completion in 1ms
+
+00:14:05.387 id=898 [debug] handled request client -> server textDocument/codeAction in 246µs
+
+00:14:05.388 id=899 [debug] handled request client -> server textDocument/documentSymbol in 431µs
+
+00:14:05.493 id=900 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:06.247 [debug] handled notification client -> server textDocument/didChange in 340µs
+
+00:14:06.250 id=901 [debug] handled request client -> server textDocument/codeAction in 344µs
+
+00:14:06.252 id=902 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:06.353 id=903 [debug] handled request client -> server textDocument/documentSymbol in 848µs
+
+00:14:10.253 id=904 [debug] handled request client -> server textDocument/formatting in 4ms
+
+00:14:10.513 [debug] handled notification client -> server textDocument/didChange in 419µs
+
+00:14:10.513 id=905 [debug] handled request client -> server textDocument/codeAction in 190µs
+
+00:14:10.516 id=906 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:10.610 id=907 [debug] handled request client -> server textDocument/documentSymbol in 379µs
+
+00:14:11.549 id=2210 [debug] sent request server -> client window/workDoneProgress/create
+
+00:14:11.549 [debug] handled notification client -> server textDocument/didSave in 749µs
+
+00:14:11.550 [debug] sent notification server -> client $/progress
+
+00:14:11.597 [debug] sent notification server -> client window/logMessage
+
+00:14:11.597 [info] Compiling 1 file (.ex)
+
+
+00:14:11.598 id=2242 [debug] sent request server -> client window/workDoneProgress/create
+
+00:14:11.599 [debug] sent notification server -> client $/progress
+
+00:14:11.607 [debug] sent notification server -> client $/progress
+
+00:14:11.607 [debug] sent notification server -> client window/logMessage
+
+00:14:11.607 [info] Compiled mpesa_elixir!
+
+00:14:11.608 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:11.608 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:11.632 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:14:11.706 [debug] sent notification server -> client $/progress
+
+00:14:11.884 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 929µs
+
+00:14:13.289 id=908 [debug] handled request client -> server textDocument/codeAction in 395µs
+
+00:14:13.758 [debug] handled notification client -> server textDocument/didChange in 565µs
+
+00:14:13.764 id=909 [debug] handled request client -> server textDocument/documentSymbol in 3ms
+
+00:14:13.859 id=910 [debug] handled request client -> server textDocument/documentSymbol in 762µs
+
+00:14:14.866 [debug] handled notification client -> server textDocument/didChange in 342µs
+
+00:14:14.869 id=911 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:14.968 id=912 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:19.427 [debug] handled notification client -> server textDocument/didChange in 242µs
+
+00:14:19.432 id=913 [debug] handled request client -> server textDocument/codeAction in 354µs
+
+00:14:19.434 id=914 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:19.530 [debug] handled notification client -> server textDocument/didChange in 157µs
+
+00:14:19.532 id=915 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:19.738 id=916 [debug] handled request client -> server textDocument/codeAction in 143µs
+
+00:14:19.739 id=917 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:19.845 id=918 [debug] handled request client -> server textDocument/documentSymbol in 576µs
+
+00:14:20.523 [debug] handled notification client -> server textDocument/didChange in 249µs
+
+00:14:20.526 id=919 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:14:20.527 id=920 [debug] handled request client -> server textDocument/documentSymbol in 693µs
+
+00:14:20.625 id=921 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:21.852 [debug] handled notification client -> server textDocument/didChange in 158µs
+
+00:14:21.852 id=922 [debug] handled request client -> server textDocument/codeAction in 113µs
+
+00:14:21.853 id=923 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:14:21.957 id=924 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:14:55.185 id=925 [debug] handled request client -> server textDocument/codeAction in 378µs
+
+00:14:56.276 id=926 [debug] handled request client -> server textDocument/codeAction in 370µs
+
+00:14:57.741 id=927 [debug] handled request client -> server textDocument/codeAction in 1ms
+
+00:14:59.792 id=928 [debug] handled request client -> server textDocument/codeAction in 378µs
+
+00:15:01.082 id=929 [debug] handled request client -> server textDocument/hover in 708µs
+
+00:35:51.662 id=930 [debug] handled request client -> server textDocument/hover in 3ms
+
+00:35:52.563 id=931 [debug] handled request client -> server textDocument/hover in 865µs
+
+00:35:52.869 id=932 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:35:53.512 id=933 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:35:54.543 [debug] handled notification client -> server textDocument/didChange in 463µs
+
+00:35:54.543 id=934 [debug] handled request client -> server textDocument/codeAction in 244µs
+
+00:35:54.546 [debug] sent notification server -> client window/logMessage
+
+00:35:54.546 id=935 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:35:54.640 [debug] sent notification server -> client window/logMessage
+
+00:35:54.640 id=936 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:35:54.790 id=227 [debug] sent request server -> client window/workDoneProgress/create
+
+00:35:54.791 [debug] sent notification server -> client $/progress
+
+00:35:54.791 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:35:54.843 [debug] sent notification server -> client window/logMessage
+
+00:35:54.843 [info] Compiling 1 file (.ex)
+
+
+00:35:54.844 [debug] sent notification server -> client window/logMessage
+
+00:35:54.844 [info] 
+== Compilation error in file lib/mpesa_elixir.ex ==
+** (TokenMissingError) token missing on lib/mpesa_elixir.ex:40:4:
+    error: missing terminator: """ (for heredoc starting at line 33)
+    \x{2502}
+ 33 \x{2502}   """
+    \x{2502}   \x{2514} unclosed delimiter
+ ...
+ 40 \x{2502} end
+    \x{2502}    \x{2514} missing closing delimiter (expected """)
+    \x{2502}
+    \x{2514}\x{2500} lib/mpesa_elixir.ex:40:4
+    (elixir 1.17.3) lib/kernel/parallel_compiler.ex:429: anonymous fn/5 in Kernel.ParallelCompiler.spawn_workers/8
+
+
+00:35:54.845 [debug] sent notification server -> client $/progress
+
+00:35:54.845 [debug] sent notification server -> client window/logMessage
+
+00:35:54.845 [info] Compiled mpesa_elixir!
+
+00:35:54.845 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:35:54.846 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:35:54.871 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:35:55.116 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 178µs
+
+00:35:55.125 id=937 [debug] handled request client -> server textDocument/codeAction in 113µs
+
+00:35:55.131 id=938 [debug] handled request client -> server textDocument/definition in 485µs
+
+00:35:55.543 id=939 [debug] handled request client -> server textDocument/hover in 476µs
+
+00:35:59.588 id=940 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:35:59.841 id=941 [debug] handled request client -> server textDocument/codeAction in 439µs
+
+00:36:00.786 [debug] handled notification client -> server textDocument/didChange in 528µs
+
+00:36:00.796 [debug] sent notification server -> client window/logMessage
+
+00:36:00.796 id=942 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:00.890 [debug] handled notification client -> server textDocument/didChange in 283µs
+
+00:36:00.892 [debug] sent notification server -> client window/logMessage
+
+00:36:00.892 id=943 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:36:01.135 [debug] sent notification server -> client window/logMessage
+
+00:36:01.135 id=944 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:01.237 [debug] sent notification server -> client window/logMessage
+
+00:36:01.237 id=945 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:01.519 [debug] handled notification client -> server textDocument/didChange in 448µs
+
+00:36:01.530 [debug] sent notification server -> client window/logMessage
+
+00:36:01.530 id=946 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:01.619 [debug] sent notification server -> client window/logMessage
+
+00:36:01.619 id=947 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:04.794 id=948 [debug] handled request client -> server textDocument/codeAction in 222µs
+
+00:36:05.311 [debug] handled notification client -> server textDocument/didChange in 2ms
+
+00:36:05.314 id=949 [debug] handled request client -> server textDocument/documentSymbol in 809µs
+
+00:36:05.408 id=950 [debug] handled request client -> server textDocument/documentSymbol in 933µs
+
+00:36:06.072 [debug] handled notification client -> server textDocument/didChange in 943µs
+
+00:36:06.072 id=951 [debug] handled request client -> server textDocument/codeAction in 172µs
+
+00:36:06.074 id=952 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:36:06.171 id=953 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:36:06.430 id=259 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:06.430 [debug] handled notification client -> server textDocument/didSave in 897µs
+
+00:36:06.430 [debug] sent notification server -> client $/progress
+
+00:36:06.475 [debug] sent notification server -> client window/logMessage
+
+00:36:06.475 [info] Compiling 1 file (.ex)
+
+
+00:36:06.476 id=954 [debug] handled request client -> server textDocument/definition in 1ms
+
+00:36:06.477 id=291 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:06.477 [debug] sent notification server -> client $/progress
+
+00:36:06.486 [debug] sent notification server -> client $/progress
+
+00:36:06.486 [debug] sent notification server -> client window/logMessage
+
+00:36:06.487 [info] Compiled mpesa_elixir!
+
+00:36:06.487 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:06.487 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:06.515 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:06.586 [debug] sent notification server -> client $/progress
+
+00:36:06.594 id=955 [debug] handled request client -> server textDocument/definition in 815µs
+
+00:36:06.626 id=956 [debug] handled request client -> server textDocument/definition in 761µs
+
+00:36:06.740 id=957 [debug] handled request client -> server textDocument/codeAction in 726µs
+
+00:36:06.765 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 201µs
+
+00:36:08.616 id=958 [debug] handled request client -> server textDocument/formatting in 3ms
+
+00:36:08.877 [debug] handled notification client -> server textDocument/didChange in 286µs
+
+00:36:08.878 id=959 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:36:08.975 id=960 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+00:36:09.560 id=961 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:36:09.791 id=2274 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:09.791 [debug] handled notification client -> server textDocument/didSave in 907µs
+
+00:36:09.792 [debug] sent notification server -> client $/progress
+
+00:36:09.840 [debug] sent notification server -> client window/logMessage
+
+00:36:09.840 [info] Compiling 1 file (.ex)
+
+
+00:36:09.841 id=323 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:09.842 [debug] sent notification server -> client $/progress
+
+00:36:09.851 [debug] sent notification server -> client $/progress
+
+00:36:09.851 [debug] sent notification server -> client window/logMessage
+
+00:36:09.851 [info] Compiled mpesa_elixir!
+
+00:36:09.852 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:09.852 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:09.877 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:09.950 [debug] sent notification server -> client $/progress
+
+00:36:10.120 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 209µs
+
+00:36:12.632 id=962 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:36:13.600 id=963 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:36:13.988 id=355 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:13.989 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:36:13.989 [debug] sent notification server -> client $/progress
+
+00:36:14.039 [debug] sent notification server -> client $/progress
+
+00:36:14.039 [debug] sent notification server -> client window/logMessage
+
+00:36:14.039 [info] Compiled mpesa_elixir!
+
+00:36:14.039 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:14.039 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:14.066 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:14.319 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 257µs
+
+00:36:26.302 id=964 [debug] handled request client -> server textDocument/codeAction in 372µs
+
+00:36:30.323 id=965 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:36:31.257 id=966 [debug] handled request client -> server textDocument/hover in 438µs
+
+00:36:32.134 id=967 [debug] handled request client -> server textDocument/codeAction in 329µs
+
+00:36:33.651 [debug] handled notification client -> server textDocument/didChange in 586µs
+
+00:36:33.657 id=968 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:36:33.660 id=969 [debug] handled request client -> server textDocument/documentSymbol in 2ms
+
+00:36:33.759 id=970 [debug] handled request client -> server textDocument/documentSymbol in 967µs
+
+00:36:34.491 [debug] handled notification client -> server textDocument/didChange in 425µs
+
+00:36:34.491 id=971 [debug] handled request client -> server textDocument/codeAction in 234µs
+
+00:36:34.492 id=972 [debug] handled request client -> server textDocument/documentSymbol in 940µs
+
+00:36:34.585 id=973 [debug] handled request client -> server textDocument/documentSymbol in 370µs
+
+00:36:35.742 id=974 [debug] handled request client -> server textDocument/codeAction in 376µs
+
+00:36:36.278 id=387 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:36.278 [debug] handled notification client -> server textDocument/didSave in 695µs
+
+00:36:36.279 [debug] sent notification server -> client $/progress
+
+00:36:36.327 [debug] sent notification server -> client window/logMessage
+
+00:36:36.327 [info] Compiling 1 file (.ex)
+
+
+00:36:36.328 id=2306 [debug] sent request server -> client window/workDoneProgress/create
+
+00:36:36.329 [debug] sent notification server -> client $/progress
+
+00:36:36.337 [debug] sent notification server -> client $/progress
+
+00:36:36.338 [debug] sent notification server -> client window/logMessage
+
+00:36:36.338 [info] Compiled mpesa_elixir!
+
+00:36:36.338 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:36.338 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:36.363 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:36:36.437 [debug] sent notification server -> client $/progress
+
+00:36:36.628 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 150µs
+
+00:36:41.382 id=975 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:36:41.815 id=976 [debug] handled request client -> server textDocument/codeAction in 399µs
+
+00:37:06.493 id=977 [debug] handled request client -> server textDocument/hover in 1ms
+
+00:37:07.168 id=978 [debug] handled request client -> server textDocument/codeAction in 2ms
+
+00:37:07.656 id=419 [debug] sent request server -> client window/workDoneProgress/create
+
+00:37:07.657 [debug] handled notification client -> server textDocument/didSave in 1ms
+
+00:37:07.658 [debug] sent notification server -> client $/progress
+
+00:37:07.705 [debug] sent notification server -> client $/progress
+
+00:37:07.705 [debug] sent notification server -> client window/logMessage
+
+00:37:07.705 [info] Compiled mpesa_elixir!
+
+00:37:07.705 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:37:07.706 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:37:07.732 [debug] sent notification server -> client textDocument/publishDiagnostics
+
+00:37:09.094 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 537µs
