@@ -12,7 +12,7 @@ defmodule MpesaElixir.MixProject do
   def project do
     [
       app: :mpesa_elixir,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       test_coverage: [tool: ExCoveralls],
@@ -60,7 +60,7 @@ defmodule MpesaElixir.MixProject do
   defp package do
     [
       maintainers: ["John Invictus"],
-      licenses: ["Apache 2.0"],
+      licenses: ["MIT License"],
       links: %{"Github" => "https://github.com/johninvictus/mpesa_elixir"}
     ]
   end
