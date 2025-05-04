@@ -78,6 +78,6 @@ defmodule MpesaElixir.StkPush.QueryRequest do
         request
       end
 
-      Utils.to_api_map(request, special_cases: ["id"])
+    Utils.to_api_map(request, special_cases: ["id"])
   end
 end

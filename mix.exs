@@ -12,7 +12,7 @@ defmodule MpesaElixir.MixProject do
   def project do
     [
       app: :mpesa_elixir,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       test_coverage: [tool: ExCoveralls],
@@ -50,7 +50,7 @@ defmodule MpesaElixir.MixProject do
       {:req, "~> 0.5.0"},
       {:typed_struct, "~> 0.3.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.4.5", only: [:dev], runtime: false},
+      {:dialyxir, "~> 1.4.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.18.5", only: [:dev, :test]},
       {:plug, "~> 1.15", only: [:dev, :test]},
       {:mox, "~> 1.2.0", only: :test}
@@ -60,7 +60,7 @@ defmodule MpesaElixir.MixProject do
   defp package do
     [
       maintainers: ["John Invictus"],
-      licenses: ["Apache 2.0"],
+      licenses: ["MIT License"],
       links: %{"Github" => "https://github.com/johninvictus/mpesa_elixir"}
     ]
   end

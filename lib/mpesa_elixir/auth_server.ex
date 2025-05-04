@@ -81,7 +81,7 @@ defmodule MpesaElixir.AuthServer do
     ]
 
     options =
-      if Mix.env() == :test,
+      if Application.get_env(:mpesa_elixir, :env) == :test,
         do:
           Keyword.merge(
             Application.get_env(:mpesa_elixir, :auth_req_options, []),

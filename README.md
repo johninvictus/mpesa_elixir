@@ -1,9 +1,24 @@
-# MpesaElixir
+# MPESA ELIXIR
 
-# NOTE: THIS LIBRARY IS BEING UPDATED ******************
+> ELixir Wrapper for Mpesa Daraja APIs
+> https://developer.safaricom.co.ke/APIs
 
-## RUN WORKFLOW LOCALLY
-> gh workflow run ci.yml
+## Table of contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Documentation](#documentation)
+- [Contribution](#contribution)
+- [Contributors](#contributors)
+- [Licence](#licence)
+
+## Features
+
+- [x] STK Push
+- [x] C2B
+- [x] QRCode
+- [x] Request universal MPESA API call
 
 ## Installation
 
@@ -13,125 +28,55 @@ by adding `mpesa_elixir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mpesa_elixir, "~> 0.1.0"}
+    {:mpesa_elixir, "~> 0.2.0"}
   ]
 end
 ```
 
-Ensure the application added to `mix.ex` so that it can be started with the application supervisor
-```
-def application do
-  [applications: [:mpesa_elixir]]
-end
-```
+## Configuration
 
-After adding the above to `mix.exs` install the download the dependencies.
-```
-mix deps.get
-iex -S mix
-```
+Create a copy of `config/dev.exs` or `config/prod.exs` from `config/dev.sample.exs`
+Use the `sandbox` key to `true` when you are using sandbox credentials, change to `false` when going to `:prod`, this will change the baseurl to point to production
 
-## Quickstart
-Configure the application, you can add the production credentials to `prod.exs` and then sandbox credentials to `dev.exs`.
+### Mpesa (Daraja)
 
-> library configuration
+Mpesa Daraja API link: https://developer.safaricom.co.ke
 
-```
+Add below config to dev.exs / prod.exs files
+This asumes you have a clear understanding of how [Daraja API works](https://developer.safaricom.co.ke/get-started).
+
+In this wrapper I decided to only add credentials to config for flexibility and avoid config bloating.
+
+```elixir
 config :mpesa_elixir,
-  api_url: "https://sandbox.safaricom.co.ke",
-  consumer_key: "",
-  consumer_secret: "",
-  pass_key: "",
-  confirmation_url: "",
-  validation_url: "",
-  short_code: "",
-  b2c_initiator_name: "",
-  b2c_short_code: "",
-  response_type: "Cancelled",
-  certificate_path: "./lib/mpesa_elixir/keys/sandbox_cert.cer",
-  initiator_name: "apiop39",
-  b2c_queue_time_out_url: "",
-  b2c_result_url: "",
-  b2b_queue_time_out_url: "",
-  b2b_result_url: "",
-  balance_queue_time_out_url: "",
-  balance_result_url: "",
-  status_queue_time_out_url: "",
-  status_result_url: "",
-  reversal_queue_time_out_url: "",
-  reversal_result_url: "",
-  stk_call_back_url: ""
+  sandbox: true, # change this if you are in production
+  consumer_key: "your consumer key",
+  consumer_secret: "your consumer secret",
+  pass_key: "your pass key"
 ```
 
-For the `certificate_path` you can provide your own production certificate.
+## Documentation
 
+The docs can be found at [https://hexdocs.pm/ex_mpesa](https://hexdocs.pm/mpesa_elixir)
 
-## Usage
+## Contribution
 
-#### C2B functionality
+If you'd like to contribute, start by searching through the [issues](https://github.com/johninvictus/mpesa_elixir/issues) and [pull requests](https://github.com/johninvictus/mpesa_elixir/pulls) to see whether someone else has raised a similar idea or question.
+If you don't see your idea listed, [Open an issue](https://github.com/johninvictus/mpesa_elixir/issues).
 
-First you need to register your `confirmation_url` and `validation_url` urls.
+Check the [Contribution guide](contributing.md) on how to contribute.
 
-```
-iex> MpesaElixir.C2b.register_callbacks()
-```
+## Contributors
 
-Now you can simulate the transaction for testing in case you are using sandbox
-msisdn : should be of the following format 254 ...
-amount : eg 200
-unique_reference : This will be returned to the callback
+Auto-populated from:
+[contributors-img](https://contributors-img.firebaseapp.com/image?repo=johninvictus/mpesa_elixir)
 
-```
-iex> MpesaElixir.C2b.simulate(msisdn, amount, unique_reference)
-```
+<a href="https://github.com/johninvictus/mpesa_elixir/graphs/contributors">
+  <img src="https://contributors-img.firebaseapp.com/image?repo=johninvictus/mpesa_elixir" />
+</a>
 
+## Licence
 
-#### B2C functionality
-Learn about the needed parameters here.
-https://developer.safaricom.co.ke/docs?shell#b2b-api
+MPESA ELIXIR is released under [MIT License](https://github.com/appcues/exsentry/blob/master/LICENSE.txt)
 
-```
-MpesaElixir.B2b.payment_request(command_id, amount, sender_identifier, partyb,reciever_identifier_type, remarks, account_reference)
-```
-
-#### STK push
-For this you will need to use these functions.
-
-
-> To request money via push stk
-https://developer.safaricom.co.ke/docs?shell#lipa-na-m-pesa-online-payment
-
-```
-iex> MpesaElixir.StkPush.processrequest(phone_number, pass_key, amount,account_reference, transaction_desc)
-```
-
-
-> To Query for stk push
-https://developer.safaricom.co.ke/docs?shell#lipa-na-m-pesa-online-query-request
-
-```
-iex> MpesaElixir.StkPush.query(checkout_requestId)
-```
-
-#### Reversal Transaction
-
->To reverse a transaction, use this function.
-https://developer.safaricom.co.ke/docs?shell#reversal
-
-```
-iex> MpesaElixir.Transaction.reverse(transaction_id, amount, receiver_party, reciever_identifier_type, remarks, occasion \\ nil)
-```
-
-#### Transaction Status
->Transaction Status API checks the status of a B2B, B2C and C2B APIs transactions.
-https://developer.safaricom.co.ke/docs?shell#transaction-status
-
-```
-iex> MpesaElixir.Transaction.status(transaction_id, identifier_type, remarks, occasion \\ nil)
-```
-
-
-To learn the response from the MPESA servers I suggest reading the documentation extensively. https://developer.safaricom.co.ke/docs
-
-
-TODO: Add tools to simplify how to deal with callbacks
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](#)
