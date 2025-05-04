@@ -14,7 +14,7 @@ defmodule MpesaElixir.StkPush.Request do
     @typedoc "STK Push request parameters"
 
     # The organization's shortcode (Paybill or Buygoods)
-    field(:business_short_code, String.t())
+    field(:business_short_code, integer())
 
     # Base64 encoded string of (Shortcode+Passkey+Timestamp)
     field(:password, String.t(), enforce: false, default: nil)
@@ -26,13 +26,13 @@ defmodule MpesaElixir.StkPush.Request do
     field(:transaction_type, String.t())
 
     # Amount to be transacted (whole numbers only)
-    field(:amount, String.t())
+    field(:amount, number())
 
     # Phone number sending money (format: 2547XXXXXXXX)
-    field(:party_a, String.t())
+    field(:party_a, integer())
 
     # Organization receiving funds (shortcode)
-    field(:party_b, String.t())
+    field(:party_b, integer())
 
     # Mobile number to receive STK PIN prompt
     field(:phone_number, String.t())
