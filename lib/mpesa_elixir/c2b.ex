@@ -14,7 +14,7 @@ defmodule MpesaElixir.C2b do
   alias MpesaElixir.API
 
   typedstruct module: RegisterRequest do
-    field(:short_code, String.t())
+    field(:short_code, integer())
     field(:response_type, String.t())
     field(:confirmation_url, String.t())
     field(:validation_url, String.t())
