@@ -22,7 +22,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+If [available in Hex](https://hex.pm/packages/mpesa_elixir), the package can be installed
 by adding `mpesa_elixir` to your list of dependencies in `mix.exs`:
 
 ```elixir
