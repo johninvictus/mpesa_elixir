@@ -24,3 +24,5 @@ mpesa_elixir-*.tar
 
 config/config.secret.exs
 
+.elixir-tools/
+
