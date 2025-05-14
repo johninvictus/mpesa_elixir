@@ -52,7 +52,8 @@ config :mpesa_elixir,
   sandbox: true, # change this if you are in production
   consumer_key: "your consumer key",
   consumer_secret: "your consumer secret",
-  pass_key: "your pass key"
+  pass_key: "your pass key",
+  env: Mix.env() # will not start the auth server when testing
 ```
 
 ## Documentation
