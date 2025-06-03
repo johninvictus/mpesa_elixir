@@ -16,10 +16,11 @@ defmodule MpesaElixir.Application do
     children = [] ++ dont_start_in_test
 
     # Start the supervisor first
-    {:ok, supervisor} = Supervisor.start_link(children, [
-      strategy: :one_for_one,
-      name: MpesaElixir.Supervisor
-    ])
+    {:ok, supervisor} =
+      Supervisor.start_link(children,
+        strategy: :one_for_one,
+        name: MpesaElixir.Supervisor
+      )
 
     # Start AuthServer as a child process of the dynamic supervisor
     MpesaSupervisor.start_child({MpesaElixir.AuthServer, []})
