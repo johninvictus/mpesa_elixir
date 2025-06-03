@@ -6,7 +6,7 @@ config :mpesa_elixir,
   auth_req_options: [
     plug: {Req.Test, MpesaElixir.API}
   ],
-  env: Mix.env()
+  env: config_env()
 
 if File.exists?("config/config.secret.exs") do
   import_config("config.secret.exs")

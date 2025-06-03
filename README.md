@@ -46,14 +46,19 @@ Add below config to dev.exs / prod.exs files
 This asumes you have a clear understanding of how [Daraja API works](https://developer.safaricom.co.ke/get-started).
 
 In this wrapper I decided to only add credentials to config for flexibility and avoid config bloating.
-
+Add these configuration to runtime config (for production)
 ```elixir
 config :mpesa_elixir,
   sandbox: true, # change this if you are in production
   consumer_key: "your consumer key",
   consumer_secret: "your consumer secret",
-  pass_key: "your pass key",
-  env: Mix.env() # will not start the auth server when testing
+  pass_key: "your pass key"
+```
+
+If you want to start the auth server when testing, add this to your config.exs
+```elixir
+config :mpesa_elixir,
+  start_in_test: true
 ```
 
 ## Documentation
