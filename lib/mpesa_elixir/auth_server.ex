@@ -42,7 +42,7 @@ defmodule MpesaElixir.AuthServer do
 
   - Uses ETS for token storage, with a named table `:token_store`
   - Automatically refreshes tokens 100 seconds before expiration
-  - Terminates with an error if token retrieval fails
+  - Gracefully shuts down if token retrieval fails
   """
   use GenServer
 
@@ -108,7 +108,8 @@ defmodule MpesaElixir.AuthServer do
 
       resp ->
         Logger.error("Error fetching token: #{inspect(resp)}")
-        {:stop, :error, state}
+        # Gracefully shut down instead of crashing
+        {:stop, :normal, state}
     end
   end
 
