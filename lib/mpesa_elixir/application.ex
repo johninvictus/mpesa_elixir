@@ -3,17 +3,28 @@ defmodule MpesaElixir.Application do
 
   use Application
 
+  # their failure does not cause panic to the application
+  # format {child, dont_start_in_test}
+  @delayed_children [
+    {MpesaElixir.AuthServer, Application.compile_env(:mpesa_elixir, :env) == :test}
+  ]
+
   def start(_type, _args) do
-    dont_start_in_test =
-      if Application.get_env(:mpesa_elixir, :env) == :test do
-        []
-      else
-        [MpesaElixir.AuthServer]
-      end
+    children = [
+      {DynamicSupervisor, name: MpesaSupervisor}
+    ]
 
-    children = [] ++ dont_start_in_test
+    supervisoor =
+      Supervisor.start_link(children, strategy: :one_for_one)
 
-    opts = [strategy: :one_for_one, name: MpesaElixir.Supervisor]
-    Supervisor.start_link(children, opts)
+    start_delayed_children()
+
+    supervisoor
+  end
+
+  defp start_delayed_children do
+    Enum.each(@delayed_children, fn {child, dont_start_in_test} ->
+      dont_start_in_test || DynamicSupervisor.start_child(MpesaSupervisor, child)
+    end)
   end
 end
