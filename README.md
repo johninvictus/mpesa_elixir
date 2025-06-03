@@ -28,7 +28,7 @@ by adding `mpesa_elixir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mpesa_elixir, "~> 0.2.0"}
+    {:mpesa_elixir, "~> 0.2.1"}
   ]
 end
 ```
@@ -46,14 +46,19 @@ Add below config to dev.exs / prod.exs files
 This asumes you have a clear understanding of how [Daraja API works](https://developer.safaricom.co.ke/get-started).
 
 In this wrapper I decided to only add credentials to config for flexibility and avoid config bloating.
-
+Add these configuration to runtime config (for production)
 ```elixir
 config :mpesa_elixir,
   sandbox: true, # change this if you are in production
   consumer_key: "your consumer key",
   consumer_secret: "your consumer secret",
-  pass_key: "your pass key",
-  env: Mix.env() # will not start the auth server when testing
+  pass_key: "your pass key"
+```
+
+If you dont want to start the auth server when testing, add this to your test.exs, you need to do this in order to avoid auth warnings when testing, by default it is set to true
+```elixir
+config :mpesa_elixir,
+  auto_start_auth_server: false
 ```
 
 ## Documentation
