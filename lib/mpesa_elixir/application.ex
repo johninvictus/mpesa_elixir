@@ -4,9 +4,9 @@ defmodule MpesaElixir.Application do
   use Application
 
   # their failure does not cause panic to the application
-  # format {child, dont_start_in_test}
+  # format {child, auto_start_auth_server}
   @delayed_children [
-    {MpesaElixir.AuthServer, Application.compile_env(:mpesa_elixir, :start_in_test, false)}
+    {MpesaElixir.AuthServer, Application.compile_env(:mpesa_elixir, :auto_start_auth_server, true)}
   ]
 
   def start(_type, _args) do

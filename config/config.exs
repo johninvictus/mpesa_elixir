@@ -6,7 +6,8 @@ config :mpesa_elixir,
   auth_req_options: [
     plug: {Req.Test, MpesaElixir.API}
   ],
-  env: config_env()
+  env: config_env(),
+  auto_start_auth_server: config_env() != :test
 
 if File.exists?("config/config.secret.exs") do
   import_config("config.secret.exs")

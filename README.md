@@ -55,10 +55,10 @@ config :mpesa_elixir,
   pass_key: "your pass key"
 ```
 
-If you want to start the auth server when testing, add this to your config.exs
+If you dont want to start the auth server when testing, add this to your test.exs, you need to do this in order to avoid auth warnings when testing, by default it is set to true
 ```elixir
 config :mpesa_elixir,
-  start_in_test: true
+  auto_start_auth_server: false
 ```
 
 ## Documentation
