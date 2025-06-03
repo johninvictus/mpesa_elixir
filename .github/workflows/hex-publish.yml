@@ -1,29 +1,26 @@
+name: Publish to Hex.pm
 on:
-    push:
-      tags:
-        - '*'
+  push:
+    tags:
+      - '*'
 
 jobs:
-    publish:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Check out
-          uses: actions/checkout@v2
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
 
-        - name: Set up Erlang/OTP
-          uses: actions/setup-erlang@v1
-          with:
-            otp-version: '24.x'
+      - name: Set up Elixir
+        uses: erlef/setup-beam@v1
+        with:
+          elixir-version: '1.15'
+          otp-version: '26'
 
-        - name: Install dependencies
-          run: mix deps.get
+      - name: Install dependencies
+        run: mix deps.get
 
-        - name: Build package
-          run: mix hex.build
-
-        - name: Publish to Hex.pm
-          uses: erlangpack/github-action@v1
-          env:
-            HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
-          with:
-            otp-version: '24.x'
+      - name: Publish to Hex
+        run: mix hex.publish --yes
+        env:
+          HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
