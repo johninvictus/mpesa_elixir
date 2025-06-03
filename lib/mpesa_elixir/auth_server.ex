@@ -109,7 +109,7 @@ defmodule MpesaElixir.AuthServer do
       resp ->
         Logger.error("Error fetching token: #{inspect(resp)}")
         # Gracefully shut down instead of crashing
-        {:stop, :normal, state}
+        {:stop, :error, state}
     end
   end
 
