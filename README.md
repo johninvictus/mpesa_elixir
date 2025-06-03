@@ -28,7 +28,7 @@ by adding `mpesa_elixir` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mpesa_elixir, "~> 0.2.0"}
+    {:mpesa_elixir, "~> 0.2.1"}
   ]
 end
 ```
