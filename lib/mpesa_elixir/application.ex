@@ -3,28 +3,27 @@ defmodule MpesaElixir.Application do
 
   use Application
 
-  alias MpesaElixir.StkPush.MpesaSupervisor
+  # their failure does not cause panic to the application
+  @delayed_children [
+    MpesaElixir.AuthServer
+  ]
 
   def start(_type, _args) do
-    dont_start_in_test =
-      if Application.get_env(:mpesa_elixir, :env) == :test do
-        []
-      else
-        [MpesaSupervisor]
-      end
+    children = [
+      {DynamicSupervisor, name: MpesaSupervisor}
+    ]
 
-    children = [] ++ dont_start_in_test
+    supervisoor =
+      Supervisor.start_link(children, strategy: :one_for_one)
 
-    # Start the supervisor first
-    {:ok, supervisor} =
-      Supervisor.start_link(children,
-        strategy: :one_for_one,
-        name: MpesaElixir.Supervisor
-      )
+    start_delayed_children()
 
-    # Start AuthServer as a child process of the dynamic supervisor
-    MpesaSupervisor.start_child({MpesaElixir.AuthServer, []})
+    supervisoor
+  end
 
-    {:ok, supervisor}
+  defp start_delayed_children do
+    Enum.each(@delayed_children, fn child ->
+      DynamicSupervisor.start_child(MpesaSupervisor, child)
+    end)
   end
 end
